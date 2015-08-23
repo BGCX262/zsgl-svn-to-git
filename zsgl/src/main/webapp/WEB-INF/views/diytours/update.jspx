@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_zsgl_domain_DiyTour" modelAttribute="diyTour" path="/diytours" versionField="Version" z="KjwRs2Pto1fcYC+AqYQOBcHA3mU=">
+        <field:input field="name" id="c_com_zsgl_domain_DiyTour_name" min="1" required="true" z="Nf1JqRztPzk+39duW3oOtbw3KIM="/>
+        <field:input field="doorPrice" id="c_com_zsgl_domain_DiyTour_doorPrice" validationMessageCode="field_invalid_number" z="7bgOUTMawrmJT5z9LEJ5DYotgQM="/>
+        <field:input field="privilege" id="c_com_zsgl_domain_DiyTour_privilege" validationMessageCode="field_invalid_number" z="sgNNlnm+/Nx+EFBI7/PoK1aeuOc="/>
+        <field:input field="children" id="c_com_zsgl_domain_DiyTour_children" validationMessageCode="field_invalid_number" z="vizk2lvD5yNEkXyso2p11a5MGHE="/>
+        <field:select field="address" id="c_com_zsgl_domain_DiyTour_address" itemValue="id" items="${touraddresses}" path="/touraddresses" z="vNXinmw6CW9hbPTOJpAL1XkYtqk="/>
+        <field:select field="type" id="c_com_zsgl_domain_DiyTour_type" itemValue="id" items="${tourtypes}" path="/tourtypes" z="5g+e/75xE8OClpVjM5IdW8Yf3zs="/>
+        <field:select field="tourDay" id="c_com_zsgl_domain_DiyTour_tourDay" itemValue="id" items="${tourdays}" path="/tourdays" z="4XlqfKyf2iZ+S//vEgESTb63KBI="/>
+        <field:input field="image" id="c_com_zsgl_domain_DiyTour_image" min="1" required="true" z="Dvh9ReQrUog9ekGlGOoZrm6onNY="/>
+        <field:input field="startCity" id="c_com_zsgl_domain_DiyTour_startCity" min="1" required="true" z="iYAnb/vBY41Dv5r9Ug8fCVI59Rk="/>
+        <field:input field="groupDate" id="c_com_zsgl_domain_DiyTour_groupDate" min="1" required="true" z="iWVy9lpT5eFOmxOLNSbCM0SvHJU="/>
+        <field:input field="way" id="c_com_zsgl_domain_DiyTour_way" min="1" required="true" z="YWSdy+tFVGyVPy2TdMdGZVlyXi4="/>
+        <field:textarea field="feature" id="c_com_zsgl_domain_DiyTour_feature" z="JxpTSGQIl9MWPcV9/NhLJaRDOW4="/>
+        <field:textarea field="plan" id="c_com_zsgl_domain_DiyTour_plan" z="fVfC9mPTAtEaVAk/nhXbpLQCkUc="/>
+        <field:input field="sort" id="c_com_zsgl_domain_DiyTour_sort" min="1" required="true" validationMessageCode="field_invalid_integer" z="CaHsKQzOtI8mig9bS4uz90dou5g="/>
+        <field:select field="recommend" id="c_com_zsgl_domain_DiyTour_recommend" itemValue="id" items="${recommends}" path="/recommends" z="meCuMn2aBHuyBC+QEEzOfEntusQ="/>
+    </form:update>
+</div>

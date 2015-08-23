@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_HotelOrder" items="${hotelorders}" z="ccMy71JHVQT7yzGsOmSakKkcFnY=">
+        <table:table create="false" data="${hotelorders}" id="l_com_zsgl_domain_HotelOrder" path="/hotelorders" update="false" z="user-managed">
+            <table:column id="c_com_zsgl_domain_HotelOrder_contact" property="contact" z="ttDY7ZKfEsn8D8Ono8Uxbbn9TpQ="/>
+            <table:column id="c_com_zsgl_domain_HotelOrder_sex" property="sex" z="senGf2+3GheJZKeuNGguTsfdPlc="/>
+            <table:column id="c_com_zsgl_domain_HotelOrder_email" property="email" z="/QoooOlyYaIFyLtu6wSoesyGv08="/>
+            <table:column id="c_com_zsgl_domain_HotelOrder_phone" property="phone" z="udPL4KXAbWhuOJyZ1vrmKm/Xj1g="/>
+            <table:column id="c_com_zsgl_domain_HotelOrder_callPhone" property="callPhone" z="dAommDHSzebND8jjDQpoQVnzNeM="/>
+            <table:column id="c_com_zsgl_domain_HotelOrder_qq" property="qq" z="BuAjhoLv3P+B/lqvdXUYP1nFu7g="/>
+        </table:table>
+    </page:list>
+</div>

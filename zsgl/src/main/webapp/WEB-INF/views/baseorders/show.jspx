@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_BaseOrder" object="${baseorder}" path="/baseorders" z="Qm8wZLD5uRKSt9Gx7QZ8hYr1Qq4=">
+        <field:display field="contact" id="s_com_zsgl_domain_BaseOrder_contact" object="${baseorder}" z="JjYdCXip3GX5NFK1CFCvddAPTyw="/>
+        <field:display field="sex" id="s_com_zsgl_domain_BaseOrder_sex" object="${baseorder}" z="e96nTwTL4tTeTNqeE95o0pDRVHI="/>
+        <field:display field="email" id="s_com_zsgl_domain_BaseOrder_email" object="${baseorder}" z="uxPf54qc8uehLXz+1wmDB0edpgk="/>
+        <field:display field="phone" id="s_com_zsgl_domain_BaseOrder_phone" object="${baseorder}" z="1yn8s1F2wy33Vzu4eeHdo74+7kk="/>
+        <field:display field="callPhone" id="s_com_zsgl_domain_BaseOrder_callPhone" object="${baseorder}" z="Josws5le069PXYg5aVg/UOUS1NM="/>
+        <field:display field="qq" id="s_com_zsgl_domain_BaseOrder_qq" object="${baseorder}" z="ooGVAmBjION/yi0SZO6SB7s++wA="/>
+        <field:display field="affirm" id="s_com_zsgl_domain_BaseOrder_affirm" object="${baseorder}" z="Q4uI9OZA4zH+NbBToKCxRoi43IA="/>
+        <field:display field="message" id="s_com_zsgl_domain_BaseOrder_message" object="${baseorder}" z="YBTJboe2YD3lNrUFWa8OGzTGfII="/>
+        <field:display field="price" id="s_com_zsgl_domain_BaseOrder_price" object="${baseorder}" z="yZKBNkmQjiAfwT+2lL0lbA3HuHo="/>
+        <field:display field="orderState" id="s_com_zsgl_domain_BaseOrder_orderState" object="${baseorder}" z="/1hSCte9AFdmI8rkxVrUcVfVtZE="/>
+    </page:show>
+</div>

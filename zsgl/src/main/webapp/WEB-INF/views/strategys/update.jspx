@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_zsgl_domain_Strategy" modelAttribute="strategy" path="/strategys" versionField="Version" z="IbPZStlkh20xA7QqV/C3T/SmpeM=">
+        <field:input field="name" id="c_com_zsgl_domain_Strategy_name" min="1" required="true" z="/bUjZlgcls9hu6pHg7q5PWBkZCc="/>
+        <field:datetime dateTimePattern="${strategy_updatetime_date_format}" field="updateTime" id="c_com_zsgl_domain_Strategy_updateTime" z="FREcbYJwHNYxAR75dWJJVxmwQDg="/>
+        <field:select label="分类" field="type" id="c_com_zsgl_domain_Strategy_type" itemValue="id" items="${strategytypes}" path="/strategytypes" z="iPNvlC1In7tuhNJuURYpFn665ZI="/>
+        <field:textarea2 field="keywords" id="c_com_zsgl_domain_Strategy_keywords" z="km6QPqwMACM5leOkNb2Fzsees/M="/>
+        <field:textarea2 field="description" id="c_com_zsgl_domain_Strategy_description" z="taf17dSzAMj3aBlSUK4pCYXZnvg="/>
+        <field:textarea field="content" id="c_com_zsgl_domain_Strategy_content" z="wmnmVmACtiFkgoihr7jbHJcuyuU="/>
+    </form:update>
+</div>

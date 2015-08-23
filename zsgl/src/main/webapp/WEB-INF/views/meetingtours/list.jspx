@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_MeetingTour" items="${meetingtours}" z="9HnG06iclHmEgC0Pvyk73UdBX/M=">
+        <table:table data="${meetingtours}" id="l_com_zsgl_domain_MeetingTour" path="/meetingtours" z="X+nKxggcTyN13IBDFlVbalG0C0g=">
+            <table:column id="c_com_zsgl_domain_MeetingTour_name" property="name" z="145He5im8ux2YYctvjvzgw+Jupk="/>
+            <table:column id="c_com_zsgl_domain_MeetingTour_doorPrice" property="doorPrice" z="xMaxIW6IEOYL6zELzxapuDtstp8="/>
+            <table:column id="c_com_zsgl_domain_MeetingTour_privilege" property="privilege" z="v1GLaIfZrWhH4W3q1L2lFSNvQpI="/>
+            <table:column id="c_com_zsgl_domain_MeetingTour_children" property="children" z="HwDVpou7LfACOMAXH/L7AJ6eVso="/>
+            <table:column id="c_com_zsgl_domain_MeetingTour_address" property="address" z="53FKkDBaEDwvYEs5eIxKoe94T54="/>
+            <table:column id="c_com_zsgl_domain_MeetingTour_type" property="type" z="2QHTInf4q0u0fMbQhCaIOTOXQmU="/>
+        </table:table>
+    </page:list>
+</div>

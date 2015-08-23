@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" delete="false" id="ps_com_zsgl_domain_NavMenu" object="${navmenu}" path="/navmenus" z="user-managed">
+        <field:display field="name" id="s_com_zsgl_domain_NavMenu_name" object="${navmenu}" z="mCn6ls7hElNMh1lrV4h94hiRaHw="/>
+        <field:display field="address" id="s_com_zsgl_domain_NavMenu_address" object="${navmenu}" z="5X8E1FR8OC933Li6m8VjM8xwlcY="/>
+        <field:display field="image" id="s_com_zsgl_domain_NavMenu_image" object="${navmenu}" z="APy5bfnwYR6qMLtS1+GT5lc25Kc="/>
+    </page:show>
+</div>

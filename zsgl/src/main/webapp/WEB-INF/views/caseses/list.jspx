@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Cases" items="${caseses}" z="z5IpVgBHRWBpTrGA2/0G7CGZwBg=">
+        <table:table data="${caseses}" id="l_com_zsgl_domain_Cases" path="/caseses" z="C3GGhglSliUN7NfjeZ2Xh3K20LM=">
+            <table:column id="c_com_zsgl_domain_Cases_name" property="name" z="OGiq2ni345R5MqihrBDLWnkTESQ="/>
+            <table:column id="c_com_zsgl_domain_Cases_content" property="content" z="PJT9ADoCGy4RJyreAYuSyREoEEY="/>
+        </table:table>
+    </page:list>
+</div>

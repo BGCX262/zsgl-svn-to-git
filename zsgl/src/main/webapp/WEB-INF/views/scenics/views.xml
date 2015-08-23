@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="scenics/list">
+        <put-attribute name="body" value="/WEB-INF/views/scenics/list.jspx"/>
+    </definition>
+<definition extends="default" name="scenics/show">
+        <put-attribute name="body" value="/WEB-INF/views/scenics/show.jspx"/>
+    </definition>
+<definition extends="default" name="scenics/create">
+        <put-attribute name="body" value="/WEB-INF/views/scenics/create.jspx"/>
+    </definition>
+<definition extends="default" name="scenics/update">
+        <put-attribute name="body" value="/WEB-INF/views/scenics/update.jspx"/>
+    </definition>
+</tiles-definitions>

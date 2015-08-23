@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_CompanyAccount" items="${companyaccounts}" z="jj5n86S0vuGSgWGtW/7we2DD/yc=">
+        <table:table create="false" data="${companyaccounts}" id="l_com_zsgl_domain_CompanyAccount" path="/companyaccounts" z="qFvrekCmtpIU5E5e7TcZ3IEbLq4=">
+            <table:column id="c_com_zsgl_domain_CompanyAccount_name" property="name" z="TUhEEfcFyOuadRteWV+EaxwS0qs="/>
+            <table:column id="c_com_zsgl_domain_CompanyAccount_cardid" property="cardid" z="ZPdmAAZEfkYyqPTHv0kVnJ+F0mU="/>
+            <table:column id="c_com_zsgl_domain_CompanyAccount_bank" property="bank" z="bNO+T2rCs6R9DojFgkrCrv1KFWo="/>
+            <table:column id="c_com_zsgl_domain_CompanyAccount_image" property="image" z="8Q6IG67gtg2tl/JDYEgyHw/SiQ8="/>
+            <table:column id="c_com_zsgl_domain_CompanyAccount_type" property="type" z="q3PzTkCZaVI1E0CkW3ehWeC1JcE="/>
+            <table:column id="c_com_zsgl_domain_CompanyAccount_accountType" property="accountType" z="s5ITmvy9K7SiD69C/uH4fn6wOJ0="/>
+        </table:table>
+    </page:list>
+    <a href="/companyaccounts?form&amp;type=${param.type }"><img title="添加" src="/resources/images/add.png" alt="添加"/></a>
+</div>

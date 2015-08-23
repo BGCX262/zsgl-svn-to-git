@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="tourtypes/list">
+        <put-attribute name="body" value="/WEB-INF/views/tourtypes/list.jspx"/>
+    </definition>
+<definition extends="default" name="tourtypes/show">
+        <put-attribute name="body" value="/WEB-INF/views/tourtypes/show.jspx"/>
+    </definition>
+<definition extends="default" name="tourtypes/create">
+        <put-attribute name="body" value="/WEB-INF/views/tourtypes/create.jspx"/>
+    </definition>
+<definition extends="default" name="tourtypes/update">
+        <put-attribute name="body" value="/WEB-INF/views/tourtypes/update.jspx"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="hoteladdresses/list">
+        <put-attribute name="body" value="/WEB-INF/views/hoteladdresses/list.jspx"/>
+    </definition>
+<definition extends="default" name="hoteladdresses/show">
+        <put-attribute name="body" value="/WEB-INF/views/hoteladdresses/show.jspx"/>
+    </definition>
+<definition extends="default" name="hoteladdresses/create">
+        <put-attribute name="body" value="/WEB-INF/views/hoteladdresses/create.jspx"/>
+    </definition>
+<definition extends="default" name="hoteladdresses/update">
+        <put-attribute name="body" value="/WEB-INF/views/hoteladdresses/update.jspx"/>
+    </definition>
+</tiles-definitions>

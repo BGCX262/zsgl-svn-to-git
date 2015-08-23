@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_GlobalResource" items="${globalresources}" z="i/5kQ/4LG43p5X9XoeAi4L7MRAI=">
+        <table:table create="false" delete="false" data="${globalresources}" id="l_com_zsgl_domain_GlobalResource" path="/globalresources" z="yx+TOQZjkvrt5nI71cMQMN3YNTc=">
+            <table:column id="c_com_zsgl_domain_GlobalResource_title" property="title" z="Y5TMzzjfSyMpNlHihN9cbnFp//g="/>
+            <table:column id="c_com_zsgl_domain_GlobalResource_logo" property="logo" z="ZPAHe8mv5RwckYfIgxOCG6AWvIo="/>
+            <table:column id="c_com_zsgl_domain_GlobalResource_seo" property="seo" z="xQqsQ3KGpTc5o+2nmBPEJ8ibFj0="/>
+            <table:column id="c_com_zsgl_domain_GlobalResource_foot" property="foot" z="J3WJLIGRGIIujHNlXvX9RehLRRY="/>
+            <table:column id="c_com_zsgl_domain_GlobalResource_script" property="script" z="pyoz4CAvSY7PO3EL8qCujMbXcTg="/>
+            <table:column id="c_com_zsgl_domain_GlobalResource_contact" property="contact" z="yIWlc8m7URRKEE4VygILdAFoU0Y="/>
+        </table:table>
+    </page:list>
+</div>

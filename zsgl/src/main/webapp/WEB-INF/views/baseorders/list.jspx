@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_BaseOrder" items="${baseorders}" z="oSgSJEeTGVmIQ61rBkUbcRBtDjo=">
+        <table:table data="${baseorders}" id="l_com_zsgl_domain_BaseOrder" path="/baseorders" z="KllwRPdRunw9h7C4mrkf2gq061M=">
+            <table:column id="c_com_zsgl_domain_BaseOrder_contact" property="contact" z="UHGZckEw2JO2ZSzijnD4bTR1mVE="/>
+            <table:column id="c_com_zsgl_domain_BaseOrder_sex" property="sex" z="ZUzAbjbs48DMDfbJHLPrEf7JLHw="/>
+            <table:column id="c_com_zsgl_domain_BaseOrder_email" property="email" z="mKQcgaOsraLIywp9PcQpFIcOmK4="/>
+            <table:column id="c_com_zsgl_domain_BaseOrder_phone" property="phone" z="AdknlDOxzkEwRqTkoBLPDN4wzoU="/>
+            <table:column id="c_com_zsgl_domain_BaseOrder_callPhone" property="callPhone" z="g+HV7rmdpupf4YsGIOjS+Q0JKJU="/>
+            <table:column id="c_com_zsgl_domain_BaseOrder_qq" property="qq" z="dQtwmq0dvMCm55aY409TfpZscDk="/>
+        </table:table>
+    </page:list>
+</div>

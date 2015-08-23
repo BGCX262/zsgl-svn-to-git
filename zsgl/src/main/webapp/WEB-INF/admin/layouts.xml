@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	
+	<definition name="admin" template="/WEB-INF/admin/index.htm"/>
+	
+	<definition name="admin/header" template="/WEB-INF/admin/header.htm"/>
+	
+	<definition name="admin/footer" template="/WEB-INF/admin/footer.htm"/>
+	
+	<definition name="admin/center" template="/WEB-INF/admin/center.htm"/>
+	
+	<definition name="admin/left" template="/WEB-INF/admin/left.jsp"/>
+	
+	<definition name="admin/right" template="/WEB-INF/admin/right.jsp"/>
+	
+</tiles-definitions>

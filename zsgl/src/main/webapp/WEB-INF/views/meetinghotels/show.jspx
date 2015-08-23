@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_MeetingHotel" object="${meetinghotel}" path="/meetinghotels" z="YaAU+NKD6tGJbFmusV6u0FQ+844=">
+        <field:display field="name" id="s_com_zsgl_domain_MeetingHotel_name" object="${meetinghotel}" z="vZyMJLR4p00cAvZaOp0l5dckc9Y="/>
+        <field:display field="image" id="s_com_zsgl_domain_MeetingHotel_image" object="${meetinghotel}" z="eMGmElW85U1hy5zk3dEAQGPDZW8="/>
+        <field:display field="address" id="s_com_zsgl_domain_MeetingHotel_address" object="${meetinghotel}" z="O5xOPIWIPwx4yBMHh/Hfo+2m8qw="/>
+        <field:display field="hotelLevel" id="s_com_zsgl_domain_MeetingHotel_hotelLevel" object="${meetinghotel}" z="YJpqAc2tXm+Z5JWWOC2/5FRolxc="/>
+        <field:display field="location" id="s_com_zsgl_domain_MeetingHotel_location" object="${meetinghotel}" z="Qm+cQlgXFbrH6EwRgTzHDACZgsM="/>
+        <field:display field="attractons" id="s_com_zsgl_domain_MeetingHotel_attractons" object="${meetinghotel}" z="83vzT65SdgUSJAMdwD4XadXiXiY="/>
+        <field:display field="openingTime" id="s_com_zsgl_domain_MeetingHotel_openingTime" object="${meetinghotel}" z="OIFNIv+AOpGoqdJzaFhktRP5AYE="/>
+        <field:display field="floor" id="s_com_zsgl_domain_MeetingHotel_floor" object="${meetinghotel}" z="aT1bkl9W698mZD+zOy+y643NF4U="/>
+        <field:display field="num" id="s_com_zsgl_domain_MeetingHotel_num" object="${meetinghotel}" z="kZhu+a7HvQE6FTflVTf80SKe/Go="/>
+        <field:display field="remark" id="s_com_zsgl_domain_MeetingHotel_remark" object="${meetinghotel}" z="jQY+TnHP3FYEtLWcLPEt2KmjeKw="/>
+        <field:display field="sort" id="s_com_zsgl_domain_MeetingHotel_sort" object="${meetinghotel}" z="lbn0wHz3K43hSKO1ogOXkYUPYgA="/>
+        <field:display field="recommend" id="s_com_zsgl_domain_MeetingHotel_recommend" object="${meetinghotel}" z="BiGaRkGSiLknmZ8cK2Xi3KGx7jk="/>
+    </page:show>
+</div>

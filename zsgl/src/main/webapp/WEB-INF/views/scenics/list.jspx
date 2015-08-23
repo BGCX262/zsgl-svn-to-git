@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:util="/util" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Scenic" items="${scenics}" z="RbLzzOnWXmnQPTXmkSP2k5ICAMo=">
+        <table:table data="${scenics}" id="l_com_zsgl_domain_Scenic" path="/scenics" z="kL19VxUWEkqiuncdpuikjipCAW8=">
+            <table:column id="c_com_zsgl_domain_Scenic_name" property="name" z="ijg/o3vE0HIPoQCgEoMxk0eYudY="/>
+            <!-- 
+            <table:column id="c_com_zsgl_domain_Scenic_image" property="image" z="b2iG5y+hqrrDciJzyt7BAf6qBMM="/>
+            <table:column id="c_com_zsgl_domain_Scenic_content" property="content" z="gJlbZbk2JGptfgaWfpaP6LyWKVo="/>
+             -->
+            <table:column id="c_com_zsgl_domain_Scenic_doorPrice" property="doorPrice" z="PMAS+i+8e773pwpEQwndJcE7ZdY="/>
+            <table:column id="c_com_zsgl_domain_Scenic_strength" property="strength" z="T+3SCT6QejZHW4LbDSl5uTqz3to="/>
+            <table:column id="c_com_zsgl_domain_Scenic_sort" property="sort"/>
+            <table:column id="c_com_zsgl_domain_Scenic_address" property="address" z="nNznH1ANqntBLBqEUsSqpg+NNcE="/>
+        </table:table>
+    </page:list>
+</div>

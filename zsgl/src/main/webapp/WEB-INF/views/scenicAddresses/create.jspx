@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_zsgl_domain_ScenicAddress" modelAttribute="scenicAddress" path="/scenicAddresses" render="${empty dependencies}" z="VUlDgak/5FgFBK4IFpD7IjZTgAk=">
+        <field:input field="name" id="c_com_zsgl_domain_ScenicAddress_name" z="R6uPGJVhbKGSmpbD1Dvb3f5UXQA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_zsgl_domain_ScenicAddress" render="${not empty dependencies}" z="qkgsIc9RmTd5+4hxcA/5Lln2Fj0="/>
+</div>

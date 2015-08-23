@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_zsgl_domain_Hotel" modelAttribute="hotel" path="/hotels" versionField="Version" z="cEq4s5Yix9MJsXx1VKYAqxBxvbQ=">
+        <field:input field="name" id="c_com_zsgl_domain_Hotel_name" min="1" required="true" z="6Msh0wJ8o/CUxPm0Xek/it5H2PU="/>
+        <field:select field="address" id="c_com_zsgl_domain_Hotel_address" itemValue="id" items="${hoteladdresses}" path="/hoteladdresses" z="3pjzCTNeyfVy6FAns3qdn4jlKj0="/>
+        <field:select field="hotelLevel" id="c_com_zsgl_domain_Hotel_hotelLevel" itemValue="id" items="${hotellevels}" path="/hotellevels" z="FHydxqL0B0qX/piu3h3PJ8TDPSA="/>
+        <field:input field="image" id="c_com_zsgl_domain_Hotel_image" min="1" required="true" z="YlxOO8wda4H2neNeefsQ5kmFOvQ="/>
+        <field:input field="location" id="c_com_zsgl_domain_Hotel_location" z="MQii/Itu0Jhtf6wtTu08/MA8NzE="/>
+        <field:input field="attractons" id="c_com_zsgl_domain_Hotel_attractons" z="wK0rFLnbLcanoPu+fKPcdWMLxEo="/>
+        <field:input field="floor" id="c_com_zsgl_domain_Hotel_floor" z="+MLxC0Yhb+jV/H7B37msyeBUu+E="/>
+        <field:input field="num" id="c_com_zsgl_domain_Hotel_num" z="3lbsoinfuDWwx8LaTF8ylhlOlpY="/>
+        <field:textarea field="remark" id="c_com_zsgl_domain_Hotel_remark" z="Ns1opwxZWVsspKCdNFkm4+d4sF4="/>
+        <field:simple field="rooms" id="c_com_zsgl_domain_Hotel_rooms" messageCode="entity_reference_not_managed" messageCodeAttribute="Room" z="ZMlC+2Bku9m2sCr7Hmdk4GO6sbc="/>
+        <field:input field="sort" id="c_com_zsgl_domain_Hotel_sort" min="1" required="true" validationMessageCode="field_invalid_integer" z="qR7S+tUs4A+0p/WbuCXhWLjO8oE="/>
+        <field:select field="recommend" id="c_com_zsgl_domain_Hotel_recommend" itemValue="id" items="${recommends}" path="/recommends" z="SM/DBLRJ7LRL8ddDIw/f4HvXfk8="/>
+        <field:input field="openingTime" id="c_com_zsgl_domain_Hotel_openingTime" z="H3lktutpZES2sJseX1EzHwM1Es4="/>
+        <field:input field="keywords" id="c_com_zsgl_domain_Hotel_keywords" z="HYnyRRDXHwSYDkDaIkUzRSoZIL8="/>
+        <field:input field="description" id="c_com_zsgl_domain_Hotel_description" z="/KgMHDKC1nrWZvE/fpkFOTfK63U="/>
+    </form:update>
+</div>

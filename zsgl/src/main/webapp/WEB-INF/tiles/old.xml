@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	<definition name="zzhulv" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/zzhulv.jsp" />
+	</definition>
+	
+	<definition name="jingd_xq" extends="template3">
+		<put-attribute name="body" value="/WEB-INF/pages/jingd_xq.jsp" />
+	</definition>
+	
+	<definition name="hotel" extends="template1"> <put-attribute name="body" 
+		value="/WEB-INF/pages/hotel.jsp"/> </definition> <definition name="ly" extends="template1"> 
+		<put-attribute name="body" value="/WEB-INF/pages/gllv.jsp"/> </definition>
+	
+	<definition name="hotel_xq" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/hotel_xq.jsp" />
+	</definition>
+
+	<definition name="glhy" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/glhy.jsp" />
+	</definition>
+	
+	<definition name="jlwlv" extends="template2"> <put-attribute name="body" 
+		value="/WEB-INF/pages/jlwlv.jsp"/> </definition> 
+		
+	<definition name="jd" extends="template3"> <put-attribute name="body" 
+		value="/WEB-INF/pages/jingdian.jsp"/> </definitio<definition name="jingd_xq" extends="template3">
+		<put-attribute name="body" value="/WEB-INF/pages/jingd_xq.jsp" />
+	</definition>n>
+	
+	<definition name="mettingHotel" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/mettingHotel.jsp" />
+	</definition>
+	
+	<definition name="zzhulv" extends="template1"> <put-attribute name="body" 
+		value="/WEB-INF/pages/zzhulv.jsp"/> </definition>
+	
+	<definition name="search_tour" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/search_tour.jsp" />
+	</definition>
+	
+	<definition name="search_hotel" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/search_hotel.jsp" />
+	</definition>
+	
+	<definition name="gllv_xq" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/gllv_xq.jsp" />
+	</definition>
+
+	<definition name="place" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/place.jsp" />
+	</definition>
+
+	<definition name="cases" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/cases.jsp" />
+	</definition>
+	
+	<definition name="lvgl_xq" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/lvgl_xq.jsp" />
+	</definition>
+	
+	<definition name="gl" extends="template1"> 
+		<put-attribute name="body" value="/WEB-INF/pages/lvgl.jsp"/> 
+	</definition>
+	
+	<definition name="about" extends="template4">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/about/index.jsp" />
+	</definition>
+
+	<definition name="gszh" extends="template4">
+		<put-attribute name="body" value="/WEB-INF/pages/gszh.jsp" />
+	</definition>
+	
+	<definition name="about" extends="template4"> 
+		<put-attribute name="body" value="/WEB-INF/pages/about.jsp"/> 
+	</definition>
+	
+	 -->

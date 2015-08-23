@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_zsgl_domain_GlobalResource" modelAttribute="globalResource" path="/globalresources" render="${empty dependencies}" z="rTptqeavIlH1Ijy+OHaE/4NEf38=">
+        <field:input field="title" id="c_com_zsgl_domain_GlobalResource_title" z="8VPto30jWOLe3t4FUyuITqyPSGU="/>
+        <field:input field="logo" id="c_com_zsgl_domain_GlobalResource_logo" z="TMNpUBtJ51JYl34A0bKIMR5ZZKM="/>
+        <field:input field="image1" id="c_com_zsgl_domain_GlobalResource_image1" z="xnfL6RKL/z677sRnV4TWAbyubOs="/>
+        <field:input field="image2" id="c_com_zsgl_domain_GlobalResource_image2" z="dlwFpQUE7S7Pkd4TbiwBcr6gp6g="/>
+        <field:input field="image3" id="c_com_zsgl_domain_GlobalResource_image3" z="qjyBe0X0dKVDB1Ml3G2+me1l2R4="/>
+        <field:input field="image4" id="c_com_zsgl_domain_GlobalResource_image4" z="Ibe9kwsXoe9iufa8a7lbuP12cWc="/>
+        <label>Seo关键字，描述:</label><textarea name="seo" value="${globalResource.seo }" style="width:750px; height: 200px;">${null }</textarea><br/>
+        <label>底部信息:</label><textarea name="foot" value="${globalResource.foot }" style="width:750px; height: 200px; ">${null }</textarea> <br/>
+        <label>外部脚本资源:</label><textarea name="script" value="${globalResource.script }" style="width:750px; height: 200px;">${null }</textarea><br/>  
+        <field:textarea field="contact" id="c_com_zsgl_domain_GlobalResource_contact" z="dohBwEd6y2hd1I6lCxUvrEoTg3o="/><br/>
+        
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_zsgl_domain_GlobalResource" render="${not empty dependencies}" z="pU4XkMpeLoM9EP7jMulqTD4QxN0="/>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Tour" items="${tours}" z="lRgtB2ZeLWP7Zo2oSPkpiarYSu8=">
+        <table:table data="${tours}" id="l_com_zsgl_domain_Tour" path="/tours" z="7OATYfdgQw9hxl/KzPXa+YajUYA=">
+            <table:column id="c_com_zsgl_domain_Tour_name" property="name" z="+Uo3g2GwOQqOh5C9tp1SRq7+bgM="/>
+            <table:column id="c_com_zsgl_domain_Tour_doorPrice" property="doorPrice" z="8K0ScRRSdgRhRB/gru3AG2DTaNk="/>
+            <table:column id="c_com_zsgl_domain_Tour_privilege" property="privilege" z="CrRQQhHjAXqxfvwNyRtmUoTKDw0="/>
+            <table:column id="c_com_zsgl_domain_Tour_children" property="children" z="UW65ueTKItA3nufoP2OOeeTLyPA="/>
+            <table:column id="c_com_zsgl_domain_Tour_address" property="address" z="HhAG/iCJKPXNPpbk/OUwzghipaY="/>
+            <table:column id="c_com_zsgl_domain_Tour_type" property="type" z="JWMyykpp33uaMgFmmMgZnVJ+ofY="/>
+        </table:table>
+    </page:list>
+</div>

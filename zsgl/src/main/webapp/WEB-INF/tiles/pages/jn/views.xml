@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="jn" extends="template2">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/jn/index.jsp" />
+	</definition>
+	
+	<definition name="jn/*" extends="jn"/>
+	
+	<definition name="jn/address/*/*" extends="jn"/>
+	
+	<definition name="ajax/jn" extends="body">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/jn/index.jsp" />
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/search.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+	
+</tiles-definitions>

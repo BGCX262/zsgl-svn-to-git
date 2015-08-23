@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_BankType" object="${banktype}" path="/banktypes" z="aOC4WzPLr54QZEVb9ehyUb1O1/c=">
+        <field:display field="name" id="s_com_zsgl_domain_BankType_name" object="${banktype}" z="UXEKYP2qV42r/Xy/gyc+YaF2+QU="/>
+        <field:display field="code" id="s_com_zsgl_domain_BankType_code" object="${banktype}" z="DmnN5z8aPaSB6wtaSR/Lh4qmAK0="/>
+    </page:show>
+</div>

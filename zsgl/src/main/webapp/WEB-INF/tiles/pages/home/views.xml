@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/home/index.jsp" />
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/online.jsp" />
+			<add-attribute value="/WEB-INF/tiles/about.jsp" />
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/order.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="ajax/index" extends="body">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/home/index.jsp" />
+		<put-list-attribute name="left">
+			<add-attribute
+				value="/WEB-INF/tiles/online.jsp" />
+			<add-attribute value="/WEB-INF/tiles/about.jsp" />
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/order.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+	
+	<!-- 
+	<definition name="homePage" template="/index.html"/>
+	
+	<definition name="ajaxHomePage" template="/ajax/index.html"/>
+	
+	<definition name="update/home" extends="baseLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/home/index.jsp" />
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/online.jsp" />
+			<add-attribute value="/WEB-INF/tiles/about.jsp" />
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/order.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="update/ajax/home" extends="body">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/home/index.jsp" />
+		<put-list-attribute name="left">
+			<add-attribute
+				value="/WEB-INF/tiles/online.jsp" />
+			<add-attribute value="/WEB-INF/tiles/about.jsp" />
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/order.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+	 -->	
+</tiles-definitions>

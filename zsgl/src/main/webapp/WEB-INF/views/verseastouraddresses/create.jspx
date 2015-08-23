@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_zsgl_domain_OverseasTourAddress" modelAttribute="overseasTourAddress" path="/verseastouraddresses" render="${empty dependencies}" z="d+fdog8mHbgYhWm9jXmhxSE9D10=">
+        <field:input field="name" id="c_com_zsgl_domain_OverseasTourAddress_name" z="2lUm9+fWeKGrl/zKU6VrIO1yO40="/>
+        <field:simple field="overseasTours" id="c_com_zsgl_domain_OverseasTourAddress_overseasTours" messageCode="entity_reference_not_managed" messageCodeAttribute="Overseas Tour" z="/QgUqTjX9DixpysopEjExgGNBrM="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_zsgl_domain_OverseasTourAddress" render="${not empty dependencies}" z="hFSl0f7Wfl3xIZj3E1gN0h2kPvI="/>
+</div>

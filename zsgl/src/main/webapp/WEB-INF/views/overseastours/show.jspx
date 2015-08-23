@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_OverseasTour" object="${overseastour}" path="/overseastours" z="TjpMtJC2x94xrkkMFwhvQBAQdrM=">
+        <field:display field="name" id="s_com_zsgl_domain_OverseasTour_name" object="${overseastour}" z="x8sGkR/EsfX8VCoBNcvPrkiejnA="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_OverseasTour_doorPrice" object="${overseastour}" z="lJT4uLAP3pfXrlWwaFCqmJWuy2o="/>
+        <field:display field="privilege" id="s_com_zsgl_domain_OverseasTour_privilege" object="${overseastour}" z="vZaf/d+4j8GnU+PTBB7DW3kfahY="/>
+        <field:display field="children" id="s_com_zsgl_domain_OverseasTour_children" object="${overseastour}" z="j8Gf+yh1n3gFZ23GeTfrAHvaTRY="/>
+        <field:display field="address" id="s_com_zsgl_domain_OverseasTour_address" object="${overseastour}" z="S5+ZX3omOGDCKEHknFuqIMCBAaA="/>
+        <field:display field="type" id="s_com_zsgl_domain_OverseasTour_type" object="${overseastour}" z="GlgJIRc2fNNwQ//KwIrdU0u3wgI="/>
+        <field:display field="tourDay" id="s_com_zsgl_domain_OverseasTour_tourDay" object="${overseastour}" z="RDW5Cc63uc5JvNGAUdfD5sDMXHM="/>
+        <field:display field="image" id="s_com_zsgl_domain_OverseasTour_image" object="${overseastour}" z="gYlzGSEPa0G0RADOvxCWExwqjG8="/>
+        <field:display field="startCity" id="s_com_zsgl_domain_OverseasTour_startCity" object="${overseastour}" z="LA2dEVujdubFJPIanPgSSYGbkx0="/>
+        <field:display field="groupDate" id="s_com_zsgl_domain_OverseasTour_groupDate" object="${overseastour}" z="mFogi6U7s/JK9pHdb5iHMkX5Su0="/>
+        <field:display field="way" id="s_com_zsgl_domain_OverseasTour_way" object="${overseastour}" z="+q6PAzMW/O4oruPpsA2Cf3iUo90="/>
+        <field:display field="feature" id="s_com_zsgl_domain_OverseasTour_feature" object="${overseastour}" z="VnB1qgMvEiqKil7DAeb+xKI7iQc="/>
+        <field:display field="plan" id="s_com_zsgl_domain_OverseasTour_plan" object="${overseastour}" z="+h+x9TfTUNAfbv4sp4M9JR+6YHE="/>
+        <field:display field="sort" id="s_com_zsgl_domain_OverseasTour_sort" object="${overseastour}" z="WvOzx8V5k7qXCj6eXBwemHKuO20="/>
+        <field:display field="recommend" id="s_com_zsgl_domain_OverseasTour_recommend" object="${overseastour}" z="8azjEmdQlUL3giNHA063+siX5ng="/>
+        <field:display field="city" id="s_com_zsgl_domain_OverseasTour_city" object="${overseastour}" z="fm6hXOvTSfmvExiuY/fp67Us0oI="/>
+    </page:show>
+</div>

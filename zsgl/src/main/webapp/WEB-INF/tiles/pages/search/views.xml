@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	
+	<definition name="s/tour" template="template1">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/search/tour.jsp" />
+	</definition>
+
+	<definition name="s/hotel" template="template1">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/search/hotel.jsp" />
+	</definition>
+	
+	<definition name="search_tour" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/search/tour.jsp" />
+	</definition>
+	
+	<definition name="search_hotel" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/search/hotel.jsp" />
+	</definition>
+	
+	<definition name="search/tour" template="template1">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/search/tour.jsp" />
+	</definition>
+
+	<definition name="search/hotel" template="template1">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/pages/search/hotel.jsp" />
+	</definition>
+		
+</tiles-definitions>

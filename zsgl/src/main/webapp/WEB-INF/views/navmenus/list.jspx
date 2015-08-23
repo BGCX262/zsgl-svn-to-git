@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_NavMenu" items="${navmenus}" z="ve5A4uaqBdpFg4e4/03laPi9sXw=">
+        <table:table create="false" data="${navmenus}" delete="false" id="l_com_zsgl_domain_NavMenu" path="/navmenus" z="user-managed">
+            <table:column id="c_com_zsgl_domain_NavMenu_name" property="name" z="L5DF4DEcrMcq3Lm+BidJDHELzyM="/>
+            <table:column id="c_com_zsgl_domain_NavMenu_address" property="address" z="rk0KRmpFx+s7gJYIbHJsPG47ZjY="/>
+            <table:column id="c_com_zsgl_domain_NavMenu_image" property="image" z="23+ptNGYBmWaHCcLKRF0zrg+wUY="/>
+        </table:table>
+    </page:list>
+</div>

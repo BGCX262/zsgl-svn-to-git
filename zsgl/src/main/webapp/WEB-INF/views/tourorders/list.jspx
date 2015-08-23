@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_TourOrder" items="${tourorders}" z="ASMSVOcuDgogrKE1SGac+FCmFcg=">
+        <table:table create="false" data="${tourorders}" id="l_com_zsgl_domain_TourOrder" path="/tourorders" update="false" z="user-managed">
+            <table:column id="c_com_zsgl_domain_TourOrder_contact" property="contact" z="JIqLrxpHWzpH1z6ikbnMyn64YPs="/>
+            <table:column id="c_com_zsgl_domain_TourOrder_sex" property="sex" z="kajqKJMfdLtmJnp26E7sJC1izPI="/>
+            <table:column id="c_com_zsgl_domain_TourOrder_email" property="email" z="cV5U3sP5/jScwxFSijg1ueLeVFo="/>
+            <table:column id="c_com_zsgl_domain_TourOrder_phone" property="phone" z="I8q44JoPIBLM01e6Aj4qbQebHtM="/>
+            <table:column id="c_com_zsgl_domain_TourOrder_callPhone" property="callPhone" z="Bx87gaGCm+B1dRyd6KDZXsl24+U="/>
+            <table:column id="c_com_zsgl_domain_TourOrder_qq" property="qq" z="uYDPuaDQYQn4yNN8WMwZBkf/zxk="/>
+            <table:column id="state" property="orderState" label="订单状态"></table:column>
+        </table:table>
+    </page:list>
+</div>

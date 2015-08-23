@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="strategys/list">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/all.jspx"/>
+    </definition>
+<definition extends="default" name="strategys/show">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/show.jspx"/>
+    </definition>
+<definition extends="default" name="strategys/create">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/form.jspx"/>
+    </definition>
+<definition extends="default" name="strategys/update">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/update.jspx"/>
+    </definition>
+    
+    <definition extends="default" name="strategys/form">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/form.jspx"/>
+    </definition>
+    
+    <definition extends="default" name="strategys/all">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/all.jspx"/>
+    </definition>
+    
+    <definition extends="default" name="strategys/update2">
+        <put-attribute name="body" value="/WEB-INF/views/strategys/update2.jspx"/>
+    </definition>
+    
+</tiles-definitions>

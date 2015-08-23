@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_MeetingTour" object="${meetingtour}" path="/meetingtours" z="6+uKy37zlHH+X61bU9KbKhAGGl4=">
+        <field:display field="name" id="s_com_zsgl_domain_MeetingTour_name" object="${meetingtour}" z="OXNLIsc3rvA44UEgxyajNeENe8c="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_MeetingTour_doorPrice" object="${meetingtour}" z="54PyG+Q70qglgJ7KnFOOHnsA7C4="/>
+        <field:display field="privilege" id="s_com_zsgl_domain_MeetingTour_privilege" object="${meetingtour}" z="YqJNpuD/tF+tPVM80JUBtEy2AyM="/>
+        <field:display field="children" id="s_com_zsgl_domain_MeetingTour_children" object="${meetingtour}" z="9eqIpt5YsTC8YzTHAzIV7TQ4STU="/>
+        <field:display field="address" id="s_com_zsgl_domain_MeetingTour_address" object="${meetingtour}" z="0rtAS9Rsmz8SDlhSbkS6qHvG5w8="/>
+        <field:display field="type" id="s_com_zsgl_domain_MeetingTour_type" object="${meetingtour}" z="yH5nBmfJP1qGswkiVPbdUaFffmc="/>
+        <field:display field="tourDay" id="s_com_zsgl_domain_MeetingTour_tourDay" object="${meetingtour}" z="Z64+O/V/Gaqa3VyU+hTEOK6bkfE="/>
+        <field:display field="image" id="s_com_zsgl_domain_MeetingTour_image" object="${meetingtour}" z="NXQDENDwke8HS54njj6tiWKJyqM="/>
+        <field:display field="startCity" id="s_com_zsgl_domain_MeetingTour_startCity" object="${meetingtour}" z="mWgpwrzOybUbXQoAlIRQm9alTq8="/>
+        <field:display field="groupDate" id="s_com_zsgl_domain_MeetingTour_groupDate" object="${meetingtour}" z="vJcO6cPrPCvnlDCNwoFDj9eMgOk="/>
+        <field:display field="way" id="s_com_zsgl_domain_MeetingTour_way" object="${meetingtour}" z="Ob5xjFrkQ10PQ8SHx6fVhPICatU="/>
+        <field:display field="feature" id="s_com_zsgl_domain_MeetingTour_feature" object="${meetingtour}" z="UU+ri9KNdmahPuhxyony6lHERxw="/>
+        <field:display field="plan" id="s_com_zsgl_domain_MeetingTour_plan" object="${meetingtour}" z="5YpE5m7Hhg6jgLj3pWlrqy+GmcA="/>
+        <field:display field="sort" id="s_com_zsgl_domain_MeetingTour_sort" object="${meetingtour}" z="AmvHP8u7JURjVRt63jS0VHu7vXY="/>
+        <field:display field="recommend" id="s_com_zsgl_domain_MeetingTour_recommend" object="${meetingtour}" z="1P+rw4uWA0JkQi2S3LCQUTTFCL0="/>
+    </page:show>
+</div>

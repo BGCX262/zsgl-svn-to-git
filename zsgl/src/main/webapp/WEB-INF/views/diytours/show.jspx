@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_DiyTour" object="${diytour}" path="/diytours" z="X6PJauWDoZXe2ObAYE7+SFBFaIY=">
+        <field:display field="name" id="s_com_zsgl_domain_DiyTour_name" object="${diytour}" z="Gt9DmJh8b8uUjpw3zKYfwyyzcg4="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_DiyTour_doorPrice" object="${diytour}" z="wm5xLDMNc4vDDuCEZELNVUa8OPA="/>
+        <field:display field="privilege" id="s_com_zsgl_domain_DiyTour_privilege" object="${diytour}" z="WV6JyNHbN7R8gGICONb1a8D2mas="/>
+        <field:display field="children" id="s_com_zsgl_domain_DiyTour_children" object="${diytour}" z="ZwySPtSP/9h/8bFF28v9/ockhM8="/>
+        <field:display field="address" id="s_com_zsgl_domain_DiyTour_address" object="${diytour}" z="76yEwNoZdp6b8o6kJVI7IUPtGJU="/>
+        <field:display field="type" id="s_com_zsgl_domain_DiyTour_type" object="${diytour}" z="z34b4/pb3f/VoMgvJG11cEQccNI="/>
+        <field:display field="tourDay" id="s_com_zsgl_domain_DiyTour_tourDay" object="${diytour}" z="N6K89wKpORkaSm1jgVVrhrvVgug="/>
+        <field:display field="image" id="s_com_zsgl_domain_DiyTour_image" object="${diytour}" z="B4Skx08hynfS5gcKbiIy1wgg1qQ="/>
+        <field:display field="startCity" id="s_com_zsgl_domain_DiyTour_startCity" object="${diytour}" z="m758UxuDMR2A2TgJaOgbmLYZi+o="/>
+        <field:display field="groupDate" id="s_com_zsgl_domain_DiyTour_groupDate" object="${diytour}" z="gQWcggk2G30IU4cpOw9uViGEh20="/>
+        <field:display field="way" id="s_com_zsgl_domain_DiyTour_way" object="${diytour}" z="FbI31Ya4njy48SVMkH6ybBdeqrY="/>
+        <field:display field="sort" id="s_com_zsgl_domain_DiyTour_sort" object="${diytour}" z="iXC51b6FGWCQeWnOHgomj3mLQF0="/>
+        <field:display label="是否推荐" field="recommend" id="s_com_zsgl_domain_DiyTour_recommend" object="${diytour}" z="M7/nvdWuvHFpiwSUiA5yUb85NSo="/>
+        <!-- 
+        	<field:display field="feature" id="s_com_zsgl_domain_DiyTour_feature" object="${diytour}" z="VMSm2601Z7cUf5ELblA4uiL9Jg0="/>
+        	<field:display field="plan" id="s_com_zsgl_domain_DiyTour_plan" object="${diytour}" z="LR4+04Blge2xawEu2vKywYthah4="/>
+         -->
+        <div><label>特色:</label><div class="box">${util:delHtml(diytour.feature) }</div></div><br/>
+        <div><label>行程安排:</label><div class="box">${util:delHtml(diytour.plan) }</div></div><br/>
+    </page:show>
+</div>

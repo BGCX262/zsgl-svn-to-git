@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_CompanyAccount" object="${companyaccount}" path="/companyaccounts" z="X4cnS85g8KWTlPv9ijhz+HV5TFQ=">
+        <field:display field="name" id="s_com_zsgl_domain_CompanyAccount_name" object="${companyaccount}" z="lLGzIDyA+77lrmVVZ1ymI0tU5Z0="/>
+        <field:display field="cardid" id="s_com_zsgl_domain_CompanyAccount_cardid" object="${companyaccount}" z="O05On0yzKFRgRPLkPCkpnziMggE="/>
+        <field:display field="bank" id="s_com_zsgl_domain_CompanyAccount_bank" object="${companyaccount}" z="Mrn0jbvSyGRfEbva6keB3ETrUCM="/>
+        <field:display field="image" id="s_com_zsgl_domain_CompanyAccount_image" object="${companyaccount}" z="6KUH4qUWPNKEfnSfjCZ+jUxkeSA="/>
+        <field:display field="type" id="s_com_zsgl_domain_CompanyAccount_type" object="${companyaccount}" z="ogyDmN1jfqPGdVT630jgTD2sRLU="/>
+        <field:display field="accountType" id="s_com_zsgl_domain_CompanyAccount_accountType" object="${companyaccount}" z="dUzdzAVbgkK1DDFGiXsMOEXtNT0="/>
+    </page:show>
+</div>

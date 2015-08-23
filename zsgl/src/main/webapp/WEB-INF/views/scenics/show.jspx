@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_Scenic" object="${scenic}" path="/scenics" z="YChytDF1R5niVvkpM+P+NS/h9CM=">
+        <field:display field="name" id="s_com_zsgl_domain_Scenic_name" object="${scenic}" z="i0zLbAZpb3ZlU0WjFtW8qQYO7aU="/>
+        <field:display field="keywords" id="s_com_zsgl_domain_Scenic_keywords" object="${scenic}" z="GZA2Q61bcP+2ozKVx85VDbP+WwY="/>
+        <field:display field="description" id="s_com_zsgl_domain_Scenic_description" object="${scenic}" z="o8pKYdR3hdvhbXh/KtxCjYQi1Qg="/>
+        <field:display field="image" id="s_com_zsgl_domain_Scenic_image" object="${scenic}" z="l0YnMv/Wn2DrcoPD8sKa6NgwEtY="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_Scenic_doorPrice" object="${scenic}" z="vYCBe8liFA/MHhrfRfqu7kGN8hg="/>
+        <field:display field="strength" id="s_com_zsgl_domain_Scenic_strength" object="${scenic}" z="RTo749F6bzXgi9hFTIgO1imQ6BY="/>
+        <field:display field="sort" id="s_com_zsgl_domain_Scenic_sort" object="${scenic}" z="FtsqIIX+wemIP6Ep8CDHVQSDBQE="/>
+        <field:display field="address" id="s_com_zsgl_domain_Scenic_address" object="${scenic}" z="zdwI99aFjtyovPp0LoBMWHp7Mt0="/>
+		<!-- 
+		<field:display field="content" id="s_com_zsgl_domain_Scenic_content" object="${scenic}" z="UurTO922Ch/PtyfCfHhXAwFa+ds="/>
+		 -->        
+        <div><label>特色:</label><div class="box">${util:delHtml(scenic.content) }</div></div><br/>
+    </page:show>
+    <a href="/jd/view/${scenic.id }.html" target="_blank" style="font-size:14px;">预览</a>
+</div>

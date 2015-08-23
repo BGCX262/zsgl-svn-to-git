@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_zsgl_domain_OverseasTour" modelAttribute="overseasTour" path="/overseastours" render="${empty dependencies}" z="7G8pFuzNyjaoGhBH9hdKLhKuD9k=">
+        <field:input field="name" id="c_com_zsgl_domain_OverseasTour_name" min="1" required="true" z="IFuYpJuIOZY5tnfOi2cp6mJuoZU="/>
+        <field:input field="doorPrice" id="c_com_zsgl_domain_OverseasTour_doorPrice" validationMessageCode="field_invalid_number" z="5fj1u27zOgYwlhG1LXKGLTcRzFM="/>
+        <field:input field="privilege" id="c_com_zsgl_domain_OverseasTour_privilege" validationMessageCode="field_invalid_number" z="yiblw0TOdSJ7jKSHYZjp4SLQEHE="/>
+        <field:input field="children" id="c_com_zsgl_domain_OverseasTour_children" validationMessageCode="field_invalid_number" z="K16KpDext63m0d3zn0dbfC0vGEw="/>
+        <field:select field="address" id="c_com_zsgl_domain_OverseasTour_address" itemValue="id" items="${touraddresses}" path="/touraddresses" z="OsBDkjqPWAA2rO2W5bJSpzVAiD4="/>
+        <field:select field="type" id="c_com_zsgl_domain_OverseasTour_type" itemValue="id" items="${tourtypes}" path="/tourtypes" z="2i3KHEBOB2dBGsCBJABV+FeF13Y="/>
+        <field:select field="tourDay" id="c_com_zsgl_domain_OverseasTour_tourDay" itemValue="id" items="${tourdays}" path="/tourdays" z="/K5dZAjb61jdFBQdUDXu0BvI+Hs="/>
+        <field:input field="image" id="c_com_zsgl_domain_OverseasTour_image" min="1" required="true" z="yoyiCMl4iUSwDaOfSlIPAohPGuE="/>
+        <field:input field="startCity" id="c_com_zsgl_domain_OverseasTour_startCity" min="1" required="true" z="dbcTiofusrMQ63VBKUyLnTxUwE0="/>
+        <field:input field="groupDate" id="c_com_zsgl_domain_OverseasTour_groupDate" min="1" required="true" z="DLDqmjqVo+KyTnVILmkxa4oIkSQ="/>
+        <field:input field="way" id="c_com_zsgl_domain_OverseasTour_way" min="1" required="true" z="iFUJa7U2AJnArnHTfOiuwJGCo2c="/>
+        <field:textarea field="feature" id="c_com_zsgl_domain_OverseasTour_feature" z="RxHNao0/VgYgL2kH14KC7R6DXTY="/>
+        <field:textarea field="plan" id="c_com_zsgl_domain_OverseasTour_plan" z="5U4TTbkOi1P+NkltPQcDYOWQcBU="/>
+        <field:input field="sort" id="c_com_zsgl_domain_OverseasTour_sort" min="1" required="true" validationMessageCode="field_invalid_integer" z="iqsY0yUxgtz+yiqtv64VMgjY37Y="/>
+        <field:select field="recommend" id="c_com_zsgl_domain_OverseasTour_recommend" itemValue="id" items="${recommends}" path="/recommends" z="F9Kcq3Efu8zFw2u/GJmsa9qQKCk="/>
+        <field:select field="city" id="c_com_zsgl_domain_OverseasTour_city" itemValue="id" items="${overseastouraddresses}" path="/verseastouraddresses" z="tPh62Z6o5cktsXvxB4QR70Fy+K0="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_zsgl_domain_OverseasTour" render="${not empty dependencies}" z="pj45cwP1m02OkJCzzCkh9K3g3T4="/>
+</div>

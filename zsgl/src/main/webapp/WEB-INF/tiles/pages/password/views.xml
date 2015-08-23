@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="password" template="/WEB-INF/tiles/pages/password/index.jsp"/>
+	
+	<definition name="password/success" template="/WEB-INF/tiles/pages/password/success.jsp"/>
+
+	<definition name="password/error" template="/WEB-INF/tiles/pages/password/error.jsp"/>
+	
+</tiles-definitions>

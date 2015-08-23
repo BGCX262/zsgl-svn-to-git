@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="tourorders/list">
+        <put-attribute name="body" value="/WEB-INF/views/tourorders/list.jspx"/>
+    </definition>
+<definition extends="default" name="tourorders/show">
+        <put-attribute name="body" value="/WEB-INF/views/tourorders/show2.jspx"/>
+    </definition>
+<definition extends="default" name="tourorders/create">
+        <put-attribute name="body" value="/WEB-INF/views/tourorders/create.jspx"/>
+    </definition>
+     
+<definition extends="default" name="tourorders/update">
+        <put-attribute name="body" value="/WEB-INF/views/tourorders/update.jspx"/>
+    </definition>
+ <definition extends="default" name="tourorders/tourorder">
+        <put-attribute name="body" value="/WEB-INF/views/tourorders/tourorder.jspx"/>
+    </definition>   
+    
+    <!-- 
+    <definition name="tourorders/update" template="/WEB-INF/views/tourorders/update.jspx"/>
+ 	<definition name="tourorders/tourorder" template="/WEB-INF/views/tourorders/tourorder.jspx"/>
+    -->
+</tiles-definitions>

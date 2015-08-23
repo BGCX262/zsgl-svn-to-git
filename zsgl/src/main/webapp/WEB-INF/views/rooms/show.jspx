@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_Room" object="${room}" path="/rooms" z="J+nvEn3OnX/Aezh1ex1yLe4P1nI=">
+        <field:display field="name" id="s_com_zsgl_domain_Room_name" object="${room}" z="afLIALrbLB3lzipvLB7DV23vnS0="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_Room_doorPrice" object="${room}" z="RCG/dJAFLvoMReMzOLdj3d4lTRg="/>
+        <field:display field="roomState" id="s_com_zsgl_domain_Room_roomState" object="${room}" z="WpWztkELivr+mPhGOfvDHzvlfY8="/>
+        <field:display field="area" id="s_com_zsgl_domain_Room_area" object="${room}" z="kWWrCyFnYyNpPoCbjqAAqkoSlNM="/>
+        <field:display field="floor" id="s_com_zsgl_domain_Room_floor" object="${room}" z="oUa2KXkhvphSfGoVC0FvZuKmtTs="/>
+        <field:display field="net" id="s_com_zsgl_domain_Room_net" object="${room}" z="7mhxG5zRz8FU3tIQjNX/gAUfsrg="/>
+        <field:display field="breakfast" id="s_com_zsgl_domain_Room_breakfast" object="${room}" z="KpfavufLkcT4jTHPvRwp7YvS8cw="/>
+        <field:display field="privilege" id="s_com_zsgl_domain_Room_privilege" object="${room}" z="eG3sROU6af2To+CqJfE2MrNhUcI="/>
+        <field:display field="type" id="s_com_zsgl_domain_Room_type" object="${room}" z="/mlIMME/DOsIhSY7d2d5iu7QYYk="/>
+        <field:display field="bad" id="s_com_zsgl_domain_Room_bad" object="${room}" z="37xbWyv1TLK4KTqQGQC9AALfkrI="/>
+        <field:display field="hotel" id="s_com_zsgl_domain_Room_hotel" object="${room}" z="+HuWyrdijQRVMGqE8tj0WLtY7oA="/>
+    </page:show>
+</div>

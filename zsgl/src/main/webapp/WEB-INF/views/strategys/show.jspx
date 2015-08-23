@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_Strategy" object="${strategy}" path="/strategys" z="78KlDFLbTUfFTZMsVSGtaI+RFCo=">
+        <field:display field="name" id="s_com_zsgl_domain_Strategy_name" object="${strategy}" z="0zf4JwE15C/BXn5zOJnsSmZ3uCw="/>
+        <field:display field="keywords" id="s_com_zsgl_domain_Strategy_keywords" object="${strategy}" z="sl9e0HCoW7O1PWPRR5KegIfnKB8="/>
+        <field:display field="description" id="s_com_zsgl_domain_Strategy_description" object="${strategy}" z="ggTGFIgXQzmAlTe6g+IshkjCUfM="/>
+        <field:display date="true" dateTimePattern="${strategy_updatetime_date_format}" field="updateTime" id="s_com_zsgl_domain_Strategy_updateTime" object="${strategy}" z="jTZPJqH+V19RNYTggobhDibklk0="/>
+        <field:display field="type" label="分类" id="s_com_zsgl_domain_Strategy_type" object="${strategy}" z="+dOmXdOsfOSejq+8tQiQO3ux+bc="/>
+		<!-- 
+			<field:display field="content" id="s_com_zsgl_domain_Strategy_content" object="${strategy}" z="NuG86iZE8aST25L6xhzZoPSpsvY="/>
+		 -->        
+        <div><label>内容:</label><div class="box">${util:delHtml(strategy.content) }</div></div><br/>
+    </page:show>
+    <a href="/gl/view/${strategy.id }.html" target="_blank" style="font-size:14px;">预览</a>
+</div>

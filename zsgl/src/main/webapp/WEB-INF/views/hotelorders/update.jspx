@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_zsgl_domain_HotelOrder" modelAttribute="hotelOrder" path="/hotelorders" versionField="Version" z="QRiPQu9bzN/qhsjeJt6m7cldtMY=">
+        <field:input field="contact" id="c_com_zsgl_domain_HotelOrder_contact" min="1" required="true" z="PGY0ljXZ1ThrtWAHX4FMktubEz0="/>
+        <field:input field="sex" id="c_com_zsgl_domain_HotelOrder_sex" z="9t3djmYLTn1UWJ22ynDsjL9yeCI="/>
+        <field:input field="email" id="c_com_zsgl_domain_HotelOrder_email" min="1" required="true" validationMessageCode="field_invalid_email" z="6tR6WXOh4D24eCpdSNW7WtvSGtk="/>
+        <field:input field="phone" id="c_com_zsgl_domain_HotelOrder_phone" min="1" required="true" z="OGl2ExI/xYTkiua0WK2cgbKUfHU="/>
+        <field:input field="callPhone" id="c_com_zsgl_domain_HotelOrder_callPhone" z="yazc42R/JOKLY9SAoVIaY0JRfJ4="/>
+        <field:input field="qq" id="c_com_zsgl_domain_HotelOrder_qq" z="w8q3MVGLI0+MCrzS5Qrzsnli+9o="/>
+        <field:select field="affirm" id="c_com_zsgl_domain_HotelOrder_affirm" itemValue="id" items="${affirms}" path="/affirms" z="mXD4u6rUQg5FxrMXjwYcypas6AY="/>
+        <field:textarea field="message" id="c_com_zsgl_domain_HotelOrder_message" z="1tlcg9vjnPfKYOlEFnHMZXYxLnw="/>
+        <field:input field="price" id="c_com_zsgl_domain_HotelOrder_price" validationMessageCode="field_invalid_number" z="A1HUjDZ19wLqXRDwRpRDvp7fjjY="/>
+        <field:input field="name" id="c_com_zsgl_domain_HotelOrder_name" z="+q6g/6qj8AAiI6aZ363v4QO1Gd8="/>
+        <field:datetime dateTimePattern="${hotelOrder_enterdate_date_format}" field="enterDate" id="c_com_zsgl_domain_HotelOrder_enterDate" z="fbB9qEhwPRcK00OLxaqbJfSvrpE="/>
+        <field:datetime dateTimePattern="${hotelOrder_leavedate_date_format}" field="leaveDate" id="c_com_zsgl_domain_HotelOrder_leaveDate" z="J9QR/aaKkTD1Wt+7XkJs/TpGT5U="/>
+        <field:input field="num" id="c_com_zsgl_domain_HotelOrder_num" validationMessageCode="field_invalid_integer" z="K4/L8SXD884sEvjW5kaBxg08ltA="/>
+        <field:select field="room" id="c_com_zsgl_domain_HotelOrder_room" itemValue="id" items="${rooms}" path="/rooms" z="nVe07q3XCy4TX7WtYYh+JY6PqUs="/>
+        <field:select field="orderState" id="c_com_zsgl_domain_HotelOrder_orderState" itemValue="id" items="${orderstates}" path="/orderstates" z="c7I2DpIfdyZvfjOwivxl3ROFOCU="/>
+        <field:input field="days" id="c_com_zsgl_domain_HotelOrder_days" z="EyFtsYtXB8124nyQPJelunTq1wc="/>
+    </form:update>
+</div>

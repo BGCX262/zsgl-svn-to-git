@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Room" items="${rooms}" z="H3dxkwAXsWxvprx/A+f4mE1vQhQ=">
+        <table:table data="${rooms}" id="l_com_zsgl_domain_Room" path="/rooms" z="tv7m55r2/uxtb+506M9M7WB4H8g=">
+            <table:column id="c_com_zsgl_domain_Room_name" property="name" z="P2blCbIur2+rptZeCU3EU7rwdys="/>
+            <table:column id="c_com_zsgl_domain_Room_doorPrice" property="doorPrice" z="N1rpGm74nzgJwKYmHdI87maPo78="/>
+            <table:column id="c_com_zsgl_domain_Room_roomState" property="roomState" z="ZfzV3PPWq+4+mit9K9G4K9ssgNg="/>
+            <table:column id="c_com_zsgl_domain_Room_area" property="area" z="JmMh2tqRdlfphO39vmv4zoniaac="/>
+            <table:column id="c_com_zsgl_domain_Room_type" property="type" z="4P1QHtzpi839Sy+yjDMEReZGQGU="/>
+            <table:column id="c_com_zsgl_domain_Room_bad" property="bad" z="p00nsYzP4DUCgfvzJgjPjaXRBIY="/>
+        </table:table>
+    </page:list>
+</div>

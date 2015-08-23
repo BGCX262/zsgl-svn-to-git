@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:util="/util" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_Tour" object="${tour}" path="/tours" z="Trys3SuxXl9EZ79LgfpBugLS/Lo=">
+        <field:display field="name" id="s_com_zsgl_domain_Tour_name" object="${tour}" z="1NfbRRE+BI9yN+wmHi7xnMRMVCA="/>
+        <field:display field="keywords" id="s_com_zsgl_domain_Tour_keywords" object="${tour}" z="tzIRDZAsJhDqWtW9bkQ0K+kAzQ4="/>
+        <field:display field="description" id="s_com_zsgl_domain_Tour_description" object="${tour}" z="17ywqp+VLEWnwDOQfDWYmLbllt8="/>
+        <field:display field="doorPrice" id="s_com_zsgl_domain_Tour_doorPrice" object="${tour}" z="R6UC+JrCvJfSMqQNWbbFiYOGdsg="/>
+        <field:display field="privilege" id="s_com_zsgl_domain_Tour_privilege" object="${tour}" z="Wr1/R6fpvMArUqlq4gWxh4OiXSY="/>
+        <field:display field="children" id="s_com_zsgl_domain_Tour_children" object="${tour}" z="2Gc/OJa52xgoLc9MIpuTBAnoX6E="/>
+        <field:display field="address" id="s_com_zsgl_domain_Tour_address" object="${tour}" z="MDZ3iJ2ZPFHz2LX4zbgbE4dw97c="/>
+        <field:display field="type" id="s_com_zsgl_domain_Tour_type" object="${tour}" z="Libi8xtFcN1VmAnKPOfZKbvwRYk="/>
+        <field:display field="tourDay" id="s_com_zsgl_domain_Tour_tourDay" object="${tour}" z="6V9nIe9Lc8e4zRdTk7tFvVvkknw="/>
+        <field:display field="image" id="s_com_zsgl_domain_Tour_image" object="${tour}" z="l+a9BKEEZ4BSnc5SzxeEYKzrmeE="/>
+        <field:display field="startCity" id="s_com_zsgl_domain_Tour_startCity" object="${tour}" z="xmYS0dkikpjpuVcYL37rFmxjgJQ="/>
+        <field:display field="groupDate" id="s_com_zsgl_domain_Tour_groupDate" object="${tour}" z="Kjadx3mNmbweXuk9s/Sf2SJIVPY="/>
+        <field:display field="way" id="s_com_zsgl_domain_Tour_way" object="${tour}" z="I9gMWU0Am6FokWjX+sKdecRM41o="/>
+        <field:display field="sort" id="s_com_zsgl_domain_Tour_sort" object="${tour}" z="v4keaGvekYhZRMT5Z8KC75QM7nM="/>
+        <field:display field="recommend" id="s_com_zsgl_domain_Tour_recommend" object="${tour}" z="u2iHn06le6xBj5f74UyZyAjI6Nw="/>
+        <!-- 
+        <field:display field="feature" id="s_com_zsgl_domain_Tour_feature" object="${tour}" z="WTpfqyR6WssRxt7sleS77E7NG2A="/>
+        <field:display field="plan" id="s_com_zsgl_domain_Tour_plan" object="${tour}" z="VWy3YYaKjb9Vt+vHN/PDzjK0IAs="/>
+         -->
+         <div><label>特色:</label><div class="box">${util:delHtml(tour.feature) }</div></div><br/>
+         <div><label>行程安排:</label><div class="box">${util:delHtml(tour.plan) }</div></div><br/>
+    </page:show>
+    <a href="/ly/view/${tour.id }.html" target="_blank" style="font-size:14px;">预览</a>
+</div>

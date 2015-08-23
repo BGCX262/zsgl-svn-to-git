@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+
+	<!-- ########################### template ################################# -->
+
+	<definition name="baseLayout" template="/WEB-INF/tiles/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<!-- gllv hotel glhy zzhulv lvgl -->
+	<definition name="template1" extends="baseLayout">
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- jlwlv -->
+	<definition name="template2" extends="baseLayout">
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/search.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- jingdian -->
+	<definition name="template3" extends="baseLayout">
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/jdss.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- about gszh -->
+	<definition name="template4" extends="baseLayout">
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- ajax body -->
+	<definition name="body" template="/WEB-INF/tiles/body.jsp">
+		<put-list-attribute name="left">
+			<add-attribute value="/WEB-INF/tiles/lxdh.jsp" />
+			<add-attribute value="/WEB-INF/tiles/tjlx.jsp" />
+			<add-attribute value="/WEB-INF/tiles/ksdh.jsp" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- ########################### simple page ################################# -->
+
+	<definition name="yd_error" template="/WEB-INF/pages/yd_error.jsp" />
+
+	<definition name="query_result" template="/WEB-INF/tiles/query_result.jsp" />
+
+	<definition name="yd_success" template="/WEB-INF/pages/yd_success.jsp" />
+
+	<definition name="hotel_success" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/hotel_success.jsp" />
+	</definition>
+
+	<definition name="tour_success" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/pages/tour_success.jsp" />
+	</definition>
+	
+	<definition name="yuding" extends="baseLayout">
+		<put-attribute name="main" value="/WEB-INF/pages/yuding.jsp" />
+		<put-list-attribute name="left" />
+	</definition>
+
+	<definition name="hotelyd" extends="baseLayout">
+		<put-attribute name="main" value="/WEB-INF/pages/hotelyd.jsp" />
+		<put-list-attribute name="left" />
+	</definition>
+	
+	
+	<!-- ######################### ajax page ################################# -->
+
+	<!-- /hotel/view/i{id} || /ly/view/{id} || /jd/view/{id} || /gl/view/{id} -->
+	<definition name="ajax/*/view/*" template="/WEB-INF/tiles/pages/{1}/view.jsp" />
+
+	<!-- /hotel/city/{city}/{page} || /hotel/level/{level}/{page} || /ly/address/{address}/{page} 
+		|| /ly/type/{type}/{page} || /ly/day/{day}/{page} || /jd/address/{address}/{page} 
+		|| /gl/type/{type}/{page} -->
+	<definition name="ajax/*/*/*/*" template="/WEB-INF/tiles/pages/{1}/index.jsp" />
+
+	<!-- /hotel/{page} || /ly/{page} || /jd/{page} || /gl/{page} -->
+	<definition name="ajax/*/*" template="/WEB-INF/tiles/pages/{1}/index.jsp" />
+
+	<!-- /hotel || /gl || /ly || /jd -->
+	<definition name="ajax/*" extends="body"
+		preparer="com.zsgl.preparer.TemplatePreparer1">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/{1}/index.jsp" />
+	</definition>
+
+	<!-- ######################### common page ######################### -->
+
+	<!-- /hotel/view/i{id} || /ly/view/{id} || /jd/view/{id} || /gl/view/{id} -->
+	<definition name="*/view/*" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/{1}/view.jsp" />
+	</definition>
+	
+	<!-- default -->
+	<definition name="*" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/tiles/pages/{1}/index.jsp" />
+	</definition>
+
+	<!-- #################################################################### -->
+
+</tiles-definitions>

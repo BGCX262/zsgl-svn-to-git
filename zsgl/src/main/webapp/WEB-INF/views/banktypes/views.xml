@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="banktypes/list">
+        <put-attribute name="body" value="/WEB-INF/views/banktypes/list.jspx"/>
+    </definition>
+<definition extends="default" name="banktypes/show">
+        <put-attribute name="body" value="/WEB-INF/views/banktypes/show.jspx"/>
+    </definition>
+<definition extends="default" name="banktypes/create">
+        <put-attribute name="body" value="/WEB-INF/views/banktypes/create.jspx"/>
+    </definition>
+<definition extends="default" name="banktypes/update">
+        <put-attribute name="body" value="/WEB-INF/views/banktypes/update.jspx"/>
+    </definition>
+</tiles-definitions>

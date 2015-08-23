@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" update="false" id="ps_com_zsgl_domain_TourOrder" object="${tourorder}" path="/tourorders" z="tRkf/rSRN7lasCRI+gqa9a5xoM8=">
+        <field:display field="contact" id="s_com_zsgl_domain_TourOrder_contact" object="${tourorder}" z="wTNsAxeli2mDFuDi0iUpQvKNGqU="/>
+        <field:display field="sex" id="s_com_zsgl_domain_TourOrder_sex" object="${tourorder}" z="1wwhYz7AwxYrsysJak1235Fxi2Q="/>
+        <field:display field="email" id="s_com_zsgl_domain_TourOrder_email" object="${tourorder}" z="8cC7MGl7nChO2Fg1rECljBk3+u4="/>
+        <field:display field="phone" id="s_com_zsgl_domain_TourOrder_phone" object="${tourorder}" z="dgnGxYEdA+Y4Jno3xvvOTaU4JXU="/>
+        <field:display field="callPhone" id="s_com_zsgl_domain_TourOrder_callPhone" object="${tourorder}" z="fkxvX0nTbu91uug/Vb5wQ2KRjPs="/>
+        <field:display field="qq" id="s_com_zsgl_domain_TourOrder_qq" object="${tourorder}" z="OCSCYf4nMf9kK2ozyrHXbWMt+hA="/>
+        <field:display field="affirm" id="s_com_zsgl_domain_TourOrder_affirm" object="${tourorder}" z="rDSBU/0xymUQSA+94JM//kiveDY="/>
+        <field:display field="message" id="s_com_zsgl_domain_TourOrder_message" object="${tourorder}" z="mDtSH/qBUiLbDKgfOhlR0r9iYJQ="/>
+        <field:display field="price" id="s_com_zsgl_domain_TourOrder_price" object="${tourorder}" z="6Pz5PjEsPToK5T7XgrxP55b+Dj0="/>
+        <field:display field="name" id="s_com_zsgl_domain_TourOrder_name" object="${tourorder}" z="I+P7+ENpCe6sqVXUIJStSsv1SoI="/>
+        <field:display date="true" dateTimePattern="${tourOrder_groupdate_date_format}" field="groupDate" id="s_com_zsgl_domain_TourOrder_groupDate" object="${tourorder}" z="CJCmDKh6YXXHmrY7C4ZhkZFMnHI="/>
+        <field:display field="num" id="s_com_zsgl_domain_TourOrder_num" object="${tourorder}" z="vxOv879NOJ/NQawAnj0BlootUHk="/>
+        <field:display field="children" id="s_com_zsgl_domain_TourOrder_children" object="${tourorder}" z="i6wOhc296+YS1I5f/GP8hg25Mx0="/>
+        <field:display field="orderState" id="s_com_zsgl_domain_TourOrder_orderState" object="${tourorder}" z="Xa6FuGZPiOcP+fRhPq4m0LD3iTc="/>
+        <a href="/hotelorders/updateorderstate?id=${tourorder.id }&amp;state=1">确认</a>
+        <a href="/hotelorders/updateorderstate?id=${tourorder.id }&amp;state=2" >正在处理</a>
+        <a href="/hotelorders/updateorderstate?id=${tourorder.id }&amp;state=3">未确认</a>
+    </page:show>
+</div>

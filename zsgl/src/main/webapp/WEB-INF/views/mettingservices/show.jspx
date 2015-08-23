@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:sec="http://www.springframework.org/security/tags" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_MettingService" object="${mettingservice}" path="/mettingservices" z="k3yFblIco3meyMfx6DMKD3M9qJM=">
+    	<sec:authorize ifAllGranted="ROLE_ROOT">
+        	<field:display field="content" id="s_com_zsgl_domain_MettingService_content" object="${mettingservice}" z="p1FgQKrZQpJJBZV2GG/v39Wu1TE="/>
+        </sec:authorize>
+        ${mettingservice.content }	
+    </page:show>
+</div>

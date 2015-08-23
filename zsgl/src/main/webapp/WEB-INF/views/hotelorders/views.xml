@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="hotelorders/list">
+        <put-attribute name="body" value="/WEB-INF/views/hotelorders/list2.jspx"/>
+    </definition>
+    <definition extends="default" name="hotelorders/show">
+        <put-attribute name="body" value="/WEB-INF/views/hotelorders/show.jsp"/>
+    </definition>
+    
+<definition extends="default" name="hotelorders/create">
+        <put-attribute name="body" value="/WEB-INF/views/hotelorders/create.jspx"/>
+    </definition>
+<definition extends="default" name="hotelorders/update">
+        <put-attribute name="body" value="/WEB-INF/views/hotelorders/update.jspx"/>
+    </definition>
+    
+    <definition extends="default" name="hotelorders/orderhotel">
+    	<put-attribute name="body" value="/WEB-INF/views/hotelorders/orderhotel.jspx"/>
+    </definition>
+    
+</tiles-definitions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" delete="false" id="ps_com_zsgl_domain_GlobalResource" object="${globalresource}" path="/globalresources" z="user-managed">
+        <field:display field="title" id="s_com_zsgl_domain_GlobalResource_title" object="${globalresource}" z="cbI5i6QNJb1b3Eem0eQLL2OZk6Q="/>
+        <field:display field="logo" id="s_com_zsgl_domain_GlobalResource_logo" object="${globalresource}" z="xd3lkDf0w8bulsx9OjmMAFZWOsU="/>
+        <field:display field="seo" id="s_com_zsgl_domain_GlobalResource_seo" object="${globalresource}" z="U6MSh1SBPE113JzdJyplvrVClT4="/>
+        <field:display field="foot" id="s_com_zsgl_domain_GlobalResource_foot" object="${globalresource}" z="rqCttJDhCM2189m+FQ2wVxt/fgs="/>
+        <field:display field="script" id="s_com_zsgl_domain_GlobalResource_script" object="${globalresource}" z="d9UqL20JC+gLdwTHHMAOLJIsBB8="/>
+        <field:display field="contact" id="s_com_zsgl_domain_GlobalResource_contact" object="${globalresource}" z="fM3sHltS7l0qYDeg132XLq+0Ooo="/>
+        <field:display field="image1" id="s_com_zsgl_domain_GlobalResource_image1" object="${globalresource}" z="om6/ogPOVbFrhc2s+qFP9iw5qYY="/>
+        <field:display field="image2" id="s_com_zsgl_domain_GlobalResource_image2" object="${globalresource}" z="bhj+VqeZVUUK5s1b5LQEknkWbJw="/>
+        <field:display field="image3" id="s_com_zsgl_domain_GlobalResource_image3" object="${globalresource}" z="fJrXTVykqGIuVmAhLpqqEZLvOEs="/>
+        <field:display field="image4" id="s_com_zsgl_domain_GlobalResource_image4" object="${globalresource}" z="uxfVWWXwPUEMZwiJBPkZ3rzfB2E="/>
+        <field:display field="keywords" id="s_com_zsgl_domain_GlobalResource_keywords" object="${globalresource}" z="lVcMzugjKnZnEgHaPVh6HYSnLUE="/>
+        <field:display field="description" id="s_com_zsgl_domain_GlobalResource_description" object="${globalresource}" z="249LEA5JCeOKWALjLh8m3G8FGaw="/>
+    </page:show>
+</div>

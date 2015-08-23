@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Strategy" items="${strategys}" z="HsnN26zfoVbn7cua9e36uZej3rg=">
+        <table:table data="${strategys}" id="l_com_zsgl_domain_Strategy" path="/strategys" z="Dy5ihYzZWL0GSL5Ek4J/sWREBKs=">
+            <table:column id="c_com_zsgl_domain_Strategy_name" property="name" z="0z3LUqtS9U89H50ynuKyfYO0ZuY="/>
+            <table:column date="true" dateTimePattern="${strategy_updatetime_date_format}" id="c_com_zsgl_domain_Strategy_updateTime" property="updateTime" z="vr5ozm+jDMENyoBD2Ih+V1RxCR0="/>
+            <table:column id="c_com_zsgl_domain_Strategy_content" property="content" z="jTXQyKB90KCUie4Yl7l//5Pivu4="/>
+            <table:column id="c_com_zsgl_domain_Strategy_type" property="type" z="vsALB4XnkDqwyFx9RPyeCKvr9uw="/>
+            <table:column id="c_com_zsgl_domain_Strategy_keywords" property="keywords" z="vFAND/AZBV5GtwFpxVDicxiFJiU="/>
+            <table:column id="c_com_zsgl_domain_Strategy_description" property="description" z="189upMGwXfQGHzEBRq5+DTsvuMA="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_MeetingHotel" items="${meetinghotels}" z="/VqOmtaBWC9cSSDF/n9hoHp8iBM=">
+        <table:table data="${meetinghotels}" id="l_com_zsgl_domain_MeetingHotel" path="/meetinghotels" z="vtJ6zbHa2lRAKoml7ds4qzRqdwE=">
+            <table:column label="酒店名称" id="c_com_zsgl_domain_MeetingHotel_name" property="name" z="sBY6yWp8J2fjZhsSQMn+nD4fcJg="/>
+            <table:column label="酒店图片" id="c_com_zsgl_domain_MeetingHotel_image" property="image" z="rjQAzS3hfXLvOhtuK1S5ewRy3yI="/>
+            <table:column label="酒店地址" id="c_com_zsgl_domain_MeetingHotel_address" property="address" z="MrJvOOoJ0bSnSAyVNkjnCh6AP8k="/>
+            <table:column label="酒店等级" id="c_com_zsgl_domain_MeetingHotel_hotelLevel" property="hotelLevel" z="f760UBRUcZyjM4p5/tO1OO6mVug="/>
+            <table:column label="酒店地址" id="c_com_zsgl_domain_MeetingHotel_location" property="location" z="tkTrw0rxilCtU+5ZWlnkMahdeo0="/>
+            <table:column label="附近景点" id="c_com_zsgl_domain_MeetingHotel_attractons" property="attractons" z="IU7LvfRYzsjOGyhdk+t4gzFsDSE="/>
+        </table:table>
+    </page:list>
+</div>

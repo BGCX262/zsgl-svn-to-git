@@ -1,0 +1,680 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 09:33:01
+project --topLevelPackage com.zsgl
+jpa setup --provider HIBERNATE --database MYSQL --userName root --password 123 --databaseName zsgl
+entity jpa --class ~.domain.HotelAddress
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findHotelAddressesByNameLike
+finder add --finderName findHotelAddressesByNameEquals
+entity jpa --class ~.domain.HotelLevel
+field string --fieldName name --sizeMin 2
+// [failed] field string --fieldName name --sizeMin 1
+finder list
+finder add --finderName findHotelLevelsByNameEquals
+finder add --finderName findHotelLevelsByNameLike
+entity jpa --class ~.domain.TourAddress
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findTourAddressesByNameEquals
+finder add --finderName findTourAddressesByNameLike
+entity jpa --class ~.domain.TourType
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findTourTypesByNameLike
+entity jpa --class ~.domain.TourDay
+field string --fieldName name --sizeMin 1
+finder list
+finder add findTourDaysByNameLike
+entity jpa --class ~.domain.Affirm
+field string --fieldName name --sizeMin 2
+finder list
+finder add findAffirmsByNameLike
+entity jpa --class ~.domain.RoomType
+field string --fieldName name --sizeMin 1
+finder list
+finder add findRoomTypesByNameLike
+entity jpa --class ~.domain.BadType
+field string --fieldName name --sizeMin 1
+finder list
+finder add findBadTypesByNameLike
+entity jpa --class ~.domain.RoomState
+field string --fieldName name --sizeMin 1
+finder list
+finder add findRoomStatesByNameLike
+entity jpa --class ~.domain.Strength
+field string --fieldName name --sizeMin 1
+entity jpa --class ~.domain.Room
+field string --fieldName name --sizeMin 1
+field number --fieldName doorPrice --type java.lang.Float
+// [failed] field reference --fieldName state --type ~.domain.RoomState
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 09:56:13
+focus --class ~.domain.Room
+field reference --fieldName roomState --type ~.domain.RoomState
+field reference --fieldName type --type ~.domain.RoomType
+field reference --fieldName bad --type ~.domain.BadType
+field string --fieldName area
+// [failed] field string --fieldName level
+field string --fieldName floor
+field string --fieldName net
+field string --fieldName breakfast
+field number --fieldName privilege --type java.lang.Float
+finder list
+finder add findRoomsByRoomState
+finder add findRoomsByDoorPriceLessThan
+finder add findRoomsByDoorPriceGreaterThan
+finder add findRoomsByDoorPriceBetween
+entity jpa --class ~.domain.Hotel
+field string --fieldName name --sizeMin 1
+field reference --fieldName address --type ~.domain.HotelAddress
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 10:08:43
+// [failed] focus --class ~.domain.Hotal
+focus --class ~.domain.Hotel
+field reference --fieldName hotelLevel --type ~.domain.HotelLevel
+field string --fieldName image --sizeMin 1
+// [failed] field string --fieldName image --sizeMin 1
+field string --fieldName location
+field string --fieldName attractons
+field date --fieldName openingTime --type java.util.Date
+field string --fieldName floor
+field string --fieldName num
+field string --fieldName remark --sizeMax 4000
+field set --fieldName rooms --type ~.domain.Room
+entity jpa --class ~.domain.Strategy
+field string --fieldName name --sizeMin 1
+field date --fieldName updateTime --type java.util.Date
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.CompanyAccount
+field string --fieldName name --sizeMin 1
+field string --fieldName cardid --sizeMin 1
+field string --fieldName bank --sizeMin 1
+field string --fieldName image --sizeMin 1
+entity jpa --class ~.domain.Link
+field string --fieldName name --sizeMin 1
+field string --fieldName address --sizeMin 1
+
+entity jpa --class ~.domain.Tour --inheritanceType SINGLE_TABLE 
+field string --fieldName name --sizeMin 1
+field number --fieldName doorPrice --type java.lang.Float
+field number --fieldName privilege --type java.lang.Float
+field number --fieldName children --type java.lang.Float
+field reference --fieldName address --type ~.domain.TourAddress
+field reference --fieldName type --type ~.domain.TourType
+field reference --fieldName tourDay --type ~.domain.TourDay
+field string --fieldName image --sizeMin 1
+field string --fieldName startCity --sizeMin 1
+field string --fieldName groupDate --sizeMin 1
+field string --fieldName way --sizeMin 1
+field string --fieldName feature --sizeMax 4000
+field string --fieldName plan --sizeMax 4000
+entity jpa --class ~.domain.OverseasTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.DiyTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.MeetingTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.Scenic
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 10:44:55
+focus --class ~.domain.Scenic
+field reference --fieldName address --type ~.domain.TourAddress
+field number --fieldName doorPrice --type java.lang.Float
+field reference --fieldName strength --type ~.domain.Strength
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Company
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MeetingPlace
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MettingService
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Cases
+field string --fieldName name --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MeetingHotel
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Poster
+field string --fieldName image --sizeMin 1
+field string --fieldName address --sizeMin 1
+entity jpa --class ~.domain.Click
+field number --fieldName hits --type java.lang.Long
+entity jpa --class ~.domain.BaseOrder
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field email template --fieldName email
+field string --fieldName phone --sizeMin 1
+// [failed] field string --fieldName call
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+// [failed] field number --fieldName result --type java.lang.Float
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field email template --fieldName email
+field string --fieldName phone --sizeMin 1
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field string --fieldName email --sizeMin 1
+field string --fieldName phone --sizeMin 1
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.HotelOrder --extends ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName name
+field date --fieldName enterDate --type java.util.Date
+field date --fieldName leaveDate --type java.util.Date
+field number --fieldName num --type java.lang.Integer
+entity jpa --class ~.domain.TourOrder --extends ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName name
+field date --fieldName groupDate --type java.util.Date
+field number --fieldName num --type java.lang.Integer
+field number --fieldName children --type java.lang.Integer
+focus --class ~.domain.BaseOrder
+finder list
+finder add findBaseOrdersByContactLike
+focus --class ~.domain.HotelOrder
+finder list
+finder add findHotelOrdersByNameLike
+finder add findHotelOrdersByEnterDateLessThan
+finder add findHotelOrdersByLeaveDateGreaterThan
+focus --class ~.domain.TourOrder
+finder list
+finder add findTourOrdersByNameLike
+finder add findTourOrdersByGroupDateLessThan
+finder add findTourOrdersByGroupDateGreaterThan
+focus --class ~.domain.Tour
+finder list
+finder add findToursByNameLike
+finder add findToursByTourDay
+finder add findToursByType
+finder add findToursByAddress
+focus --class ~.domain.Hotel
+finder list
+finder add findHotelsByAddress
+finder add findHotelsByNameLike
+finder add findHotelsByHotelLevel
+focus --class ~.domain.Tour
+finder list
+finder add findToursByAddress
+finder add findToursByType
+finder add findToursByTourDay
+web mvc setup
+web mvc all --package com.zsgl.web.admin
+security setup
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 13:58:18
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-18 14:57:47
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-18 15:34:07
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-18 17:26:18
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 09:27:43
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:05:16
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:16:11
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:19:06
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:21:42
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:21:46
+// [failed] script --file log.roo
+// [failed] script --file log.roo
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:27:03
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:27:06
+project --topLevelPackage com.zsgl
+jpa setup --provider HIBERNATE --database MYSQL --userName root --password 123 --databaseName zsgl
+entity jpa --class ~.domain.HotelAddress
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findHotelAddressesByNameLike
+finder add --finderName findHotelAddressesByNameEquals
+entity jpa --class ~.domain.HotelLevel
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findHotelLevelsByNameEquals
+finder add --finderName findHotelLevelsByNameLike
+entity jpa --class ~.domain.TourAddress
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findTourAddressesByNameEquals
+finder add --finderName findTourAddressesByNameLike
+entity jpa --class ~.domain.TourType
+field string --fieldName name --sizeMin 2
+finder list
+finder add --finderName findTourTypesByNameLike
+entity jpa --class ~.domain.TourDay
+field string --fieldName name --sizeMin 1
+finder list
+finder add findTourDaysByNameLike
+entity jpa --class ~.domain.Affirm
+field string --fieldName name --sizeMin 2
+finder list
+finder add findAffirmsByNameLike
+entity jpa --class ~.domain.RoomType
+field string --fieldName name --sizeMin 1
+finder list
+finder add findRoomTypesByNameLike
+entity jpa --class ~.domain.BadType
+field string --fieldName name --sizeMin 1
+finder list
+finder add findBadTypesByNameLike
+entity jpa --class ~.domain.RoomState
+field string --fieldName name --sizeMin 1
+finder list
+finder add findRoomStatesByNameLike
+entity jpa --class ~.domain.Strength
+field string --fieldName name --sizeMin 1
+entity jpa --class ~.domain.Room
+field string --fieldName name --sizeMin 1
+field number --fieldName doorPrice --type java.lang.Float
+focus --class ~.domain.Room
+field reference --fieldName roomState --type ~.domain.RoomState
+field reference --fieldName type --type ~.domain.RoomType
+field reference --fieldName bad --type ~.domain.BadType
+field string --fieldName area
+field string --fieldName floor
+field string --fieldName net
+field string --fieldName breakfast
+field number --fieldName privilege --type java.lang.Float
+finder list
+finder add findRoomsByRoomState
+finder add findRoomsByDoorPriceLessThan
+finder add findRoomsByDoorPriceGreaterThan
+finder add findRoomsByDoorPriceBetween
+entity jpa --class ~.domain.Hotel
+field string --fieldName name --sizeMin 1
+field reference --fieldName address --type ~.domain.HotelAddress
+focus --class ~.domain.Hotel
+field reference --fieldName hotelLevel --type ~.domain.HotelLevel
+field string --fieldName image --sizeMin 1
+field string --fieldName location
+field string --fieldName attractons
+field date --fieldName openingTime --type java.util.Date
+field string --fieldName floor
+field string --fieldName num
+field string --fieldName remark --sizeMax 4000
+field set --fieldName rooms --type ~.domain.Room
+entity jpa --class ~.domain.Strategy
+field string --fieldName name --sizeMin 1
+field date --fieldName updateTime --type java.util.Date
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.CompanyAccount
+field string --fieldName name --sizeMin 1
+field string --fieldName cardid --sizeMin 1
+field string --fieldName bank --sizeMin 1
+field string --fieldName image --sizeMin 1
+entity jpa --class ~.domain.Link
+field string --fieldName name --sizeMin 1
+field string --fieldName address --sizeMin 1
+entity jpa --class ~.domain.Tour --inheritanceType SINGLE_TABLE 
+field string --fieldName name --sizeMin 1
+field number --fieldName doorPrice --type java.lang.Float
+field number --fieldName privilege --type java.lang.Float
+field number --fieldName children --type java.lang.Float
+field reference --fieldName address --type ~.domain.TourAddress
+field reference --fieldName type --type ~.domain.TourType
+field reference --fieldName tourDay --type ~.domain.TourDay
+field string --fieldName image --sizeMin 1
+field string --fieldName startCity --sizeMin 1
+field string --fieldName groupDate --sizeMin 1
+field string --fieldName way --sizeMin 1
+field string --fieldName feature --sizeMax 4000
+field string --fieldName plan --sizeMax 4000
+entity jpa --class ~.domain.OverseasTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.DiyTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.MeetingTour --extends ~.domain.Tour --inheritanceType SINGLE_TABLE 
+entity jpa --class ~.domain.Scenic
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+focus --class ~.domain.Scenic
+field reference --fieldName address --type ~.domain.TourAddress
+field number --fieldName doorPrice --type java.lang.Float
+field reference --fieldName strength --type ~.domain.Strength
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Company
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MeetingPlace
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MettingService
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Cases
+field string --fieldName name --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.MeetingHotel
+field string --fieldName name --sizeMin 1
+field string --fieldName image --sizeMin 1
+field string --fieldName content --sizeMax 4000
+entity jpa --class ~.domain.Poster
+field string --fieldName image --sizeMin 1
+field string --fieldName address --sizeMin 1
+entity jpa --class ~.domain.Click
+field number --fieldName hits --type java.lang.Long
+entity jpa --class ~.domain.BaseOrder
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field email template --fieldName email
+field string --fieldName phone --sizeMin 1
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field email template --fieldName email
+field string --fieldName phone --sizeMin 1
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName contact --sizeMin 1
+field string --fieldName sex
+field string --fieldName email --sizeMin 1
+field string --fieldName phone --sizeMin 1
+field string --fieldName callPhone
+field string --fieldName qq
+field reference --fieldName affirm --type ~.domain.Affirm
+field string --fieldName message --sizeMax 2000
+field number --fieldName price --type java.lang.Float
+entity jpa --class ~.domain.HotelOrder --extends ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName name
+field date --fieldName enterDate --type java.util.Date
+field date --fieldName leaveDate --type java.util.Date
+field number --fieldName num --type java.lang.Integer
+entity jpa --class ~.domain.TourOrder --extends ~.domain.BaseOrder --inheritanceType SINGLE_TABLE 
+field string --fieldName name
+field date --fieldName groupDate --type java.util.Date
+field number --fieldName num --type java.lang.Integer
+field number --fieldName children --type java.lang.Integer
+focus --class ~.domain.BaseOrder
+finder list
+finder add findBaseOrdersByContactLike
+focus --class ~.domain.HotelOrder
+finder list
+finder add findHotelOrdersByNameLike
+finder add findHotelOrdersByEnterDateLessThan
+finder add findHotelOrdersByLeaveDateGreaterThan
+focus --class ~.domain.TourOrder
+finder list
+finder add findTourOrdersByNameLike
+finder add findTourOrdersByGroupDateLessThan
+finder add findTourOrdersByGroupDateGreaterThan
+focus --class ~.domain.Tour
+finder list
+finder add findToursByNameLike
+finder add findToursByTourDay
+finder add findToursByType
+finder add findToursByAddress
+focus --class ~.domain.Hotel
+finder list
+finder add findHotelsByAddress
+finder add findHotelsByNameLike
+finder add findHotelsByHotelLevel
+focus --class ~.domain.Tour
+finder list
+finder add findToursByAddress
+finder add findToursByType
+finder add findToursByTourDay
+web mvc setup
+web mvc all --package com.zsgl.web.admin
+security setup
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:29:21
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:29:22
+// script --file log.roo
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:29:22
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:29:58
+focus --class ~.domain.Hotel
+field number --fieldName sort --type java.lang.Integer --min 1 --notNull 
+focus --class ~.domain.Tour
+field number --fieldName sort --type java.lang.Integer --min 1 --notNull 
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 11:41:58
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 11:50:12
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 14:09:51
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 14:10:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 14:10:19
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 14:10:28
+focus --class ~.domain.Room
+finder list
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 14:30:10
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 14:30:14
+     q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-19 14:40:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-19 14:40:41
+web mvc all --package com.zsgl.web
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-21 22:41:29
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-22 01:45:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-25 16:36:29
+focus --class ~.JdjsController
+// [failed] focus --class com.zsgl.web.domain.Scenic
+focus --class com.zsgl.domain.Scenic
+// [failed] field number --fieldName sort --type java.lang.Integer
+focus --class ~.domain.Scenic
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+focus --class ~.domain.Room
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-25 17:01:34
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-25 17:04:49
+hint
+focus --class ~.domain.Room
+focus --class com.zsgl.domain.Scenic
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// [failed] field number --fieldName sort --type java.lang.Integer
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-25 17:36:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:33:07
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:33:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:34:21
+focus --class ~.domain.Scenic
+field number --fieldName sort --type java.lang.Integer
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:47:43
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:47:47
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:48:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:48:09
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:48:37
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:48:40
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:49:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:49:05
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:49:34
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:51:33
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:52:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:52:09
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:52:31
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:54:47
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 09:55:55
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 09:56:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-26 14:01:31
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-26 17:25:34
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-29 13:42:52
+perform package
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-29 16:44:11
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-30 01:23:59
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-30 01:24:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-30 06:22:43
+focus --class ~.domain.HotelOrder
+// [failed] field reference --fieldName room --type ~.domain.Room
+field reference --fieldName room --type ~.domain.Room
+web mvc all --package com.zsgl.web.admin
+focus --class ~.domain.HotelOrder
+field reference --fieldName room --type ~.domain.Room
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-30 07:42:39
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-30 09:54:51
+focus --class ~.domain.Click
+// [failed] field date --fieldName updateTime --type java.util.Date
+// [failed] field date --fieldName updateTime --type java.util.Date
+// [failed] field date --fieldName updateTime --type java.util.Date
+focus --class ~.domain.Click
+// [failed] field date --fieldName updateTime --type java.util.Date
+// [failed] field date --fieldName updateTime --type java.util.Date
+// [failed] field date --fieldName updateTime --type java.util.Date
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-30 10:39:11
+focus --class ~.domain.Click
+field date --fieldName updateTime --type java.util.Date
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-30 10:54:29
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-07-30 16:20:56
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-08 12:17:25
+focus --class ~.domain.Hotel
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-08 13:24:59
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-08 13:25:03
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-08 13:31:21
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-08 13:31:24
+entity jpa --class ~.domain.OrderState
+field string --fieldName name
+focus --class ~.domain.BaseOrder
+// [failed] field reference --fieldName state --type ~.domain.OrderState
+field reference --fieldName orderState --type ~.domain.OrderState
+entity jpa --class ~.domain.NavMenu
+field string --fieldName name
+field string --fieldName address
+field string --fieldName image
+web mvc all --package com.zsgl.web.admin
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-09 14:15:53
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-09 20:22:28
+entity jpa --class ~.domain.BankType
+field string --fieldName name
+field string --fieldName code
+focus --class ~.domain.CompanyAccount
+field reference --fieldName type --type ~.domain.BankType
+// [failed] web mvc all --package com.zsgl.web.admin
+web mvc all --package com.zsgl.web.admin
+web mvc all --package com.zsgl.web.admin
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-09 20:40:49
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-09 20:40:54
+focus --class ~.domain.Tour
+entity jpa --class ~.domain.Recommend
+field string --fieldName name
+focus --class ~.domain.Tour
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field reference --fieldName recommends --type ~.domain.Recommend
+// [failed] field reference --fieldName recommends --type ~.domain.Recommend
+// [failed] field reference --fieldName recommends --type ~.domain.Recommend
+focus --class ~.domain.Recommend
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-09 20:56:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-09 20:56:06
+focus --class  ~.domain.Tour
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+entity jpa --class ~.domain.Recommend
+focus --class ~.domain.Tour
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+// [failed] field string --fieldName rec
+entity jpa --class ~.domain.Recommend
+field string --fieldName name
+focus --class ~.domain.Tour
+// [failed] field reference --fieldName recommend --type ~.domain.Recommend
+web mvc all --package com.zsgl.web.admin
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-10 14:46:51
+focus --class ~.domain.Hotel
+field reference --fieldName recommend --type ~.domain.Recommend
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-13 15:59:20
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-13 17:30:06
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-14 10:51:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-14 17:12:15
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-14 17:29:15
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-15 15:27:10
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-16 09:19:41
+entity jpa --class ~.domain.AccountType
+field string --fieldName name
+entity jpa --class ~.domain.StrategyType
+field string --fieldName name
+web mvc all --package ~.web.admin
+web mvc all --package com.zsgl.web.admin
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-16 11:35:01
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-16 14:00:29
+focus --class ~.zsgl.domain.Price
+finder list
+finder add --finderName findPricesByDateBetween
+finder add --finderName findPricesByDateGreaterThan
+finder add --finderName findPricesByDateLessThan
+focus --class ~.zsgl.domain.Hotel
+finder list
+focus --class ~.zsgl.domain.Room
+finder list
+finder add --finderName findRoomsByPrices
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-17 16:04:18
+focus --class ~.domain.Room
+// [failed] field reference --fieldName hotel --type ~.domain.Hotel --joinColumnName hotel_id
+// [failed] field reference --fieldName hotel --type ~.domain.Hotel --joinColumnName hotel_id
+focus --class ~.domain.Room
+// [failed] field reference --fieldName hotel --type ~.domain.Hotel --joinColumnName hotel_id
+q
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-17 16:12:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-17 16:12:48
+focus --class ~.domain.Room
+field reference --fieldName hotel --type ~.domain.hotel --joinColumnName hotel_id
+focus --class ~.domain.Hotel
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-19 21:52:27
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-23 23:23:32
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-24 01:01:13
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-31 11:01:59
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-31 11:03:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-31 11:03:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-31 11:05:22
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-31 11:57:53
+focus --class ~.domain.CompanyAccount
+focus --class ~.domain.CompanyAccount
+finder list 
+finder add --finderName findCompanyAccountsByAccountType
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-31 13:38:47
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-07 12:02:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-09-07 17:10:25
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-12 11:40:24
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-09-12 17:35:04
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-13 09:30:53
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-09-13 11:39:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-10-22 15:17:11
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-10-22 19:01:11

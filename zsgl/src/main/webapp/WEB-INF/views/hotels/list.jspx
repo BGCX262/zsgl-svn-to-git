@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_Hotel" items="${hotels}" z="iMaUzKdYHUcNgbPPoYDdGQDLFfc=">
+        <table:table create="false" data="${hotels}" id="l_com_zsgl_domain_Hotel" path="/hotels" z="user-managed">
+            <table:column id="c_com_zsgl_domain_Hotel_name" property="name" z="scro5A1PyJaZF7v1Ue+mmYjtlLY="/>
+            <table:column id="c_com_zsgl_domain_Hotel_address" property="address" z="Mtxw5r47grPQFT/Beh7f3ZZl8u4="/>
+            <table:column id="c_com_zsgl_domain_Hotel_hotelLevel" property="hotelLevel" z="2PU/rfi/Z47mHg+11RBJGk8C164="/>
+            <table:column id="c_com_zsgl_domain_Hotel_image" property="image" z="yJPHrSXw/Bm0VNpe2FCM2TuTozE="/>
+            <table:column id="c_com_zsgl_domain_Hotel_location" property="location" z="z+ClIKUQkQYwKEtKIego5ctXU1A="/>
+            <table:column id="c_com_zsgl_domain_Hotel_attractons" property="attractons" z="8n4ZQEBj/s2iYe3WGqswrgHY0hg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:sec="http://www.springframework.org/security/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_zsgl_domain_Hotel" object="${hotel}" path="/hotels" z="8WjD18SN8dJdSJkQK68QL2CXX8M=">
+        <field:display field="name" id="s_com_zsgl_domain_Hotel_name" object="${hotel}" z="U/j+mL/QdfF54DTfTtxmyYzhO3I="/>
+        <field:display field="keywords" id="s_com_zsgl_domain_Hotel_keywords" object="${hotel}" z="Qncr89lS+euxLHo5j2bhuPqnCnE="/>
+        <field:display field="description" id="s_com_zsgl_domain_Hotel_description" object="${hotel}" z="D4tAHh/VIU9MQRAmdLvXO8bwugk="/>
+        <field:display field="address" id="s_com_zsgl_domain_Hotel_address" object="${hotel}" z="9o/zrrlbwMWVpyAIN8VH6oN/hIc="/>
+        <field:display field="hotelLevel" id="s_com_zsgl_domain_Hotel_hotelLevel" object="${hotel}" z="Nznn3YhusYO8go9XOhgP/e5uW3g="/>
+        <field:display field="image" id="s_com_zsgl_domain_Hotel_image" object="${hotel}" z="+/wJFgmC0FPepIWwqkRp2vQY0YU="/>
+        <field:display field="location" id="s_com_zsgl_domain_Hotel_location" object="${hotel}" z="ZH6qpW7QW1HNcwSnbZ7jU447TeI="/>
+        <field:display field="attractons" id="s_com_zsgl_domain_Hotel_attractons" object="${hotel}" z="gBW79BaFgfV3429LoNGX7JdlL+Y="/>
+        <field:display field="floor" id="s_com_zsgl_domain_Hotel_floor" object="${hotel}" z="QBrsF+dU6GCYtghVJVWCWd++BeY="/>
+        <field:display field="num" id="s_com_zsgl_domain_Hotel_num" object="${hotel}" z="+8DS09x9oqSAdHbpigaJK5Xdj4U="/>
+        <field:display field="sort" id="s_com_zsgl_domain_Hotel_sort" object="${hotel}" z="Z/bLhFV2/A7Q2NQPV9fxiTX1TiA="/>
+        <field:display field="recommend" id="s_com_zsgl_domain_Hotel_recommend" object="${hotel}" z="GPh/t8aMrntyyHi3X84S0iG/Fr8="/>
+        <sec:authorize ifAllGranted="ROLE_ROOT">
+            <field:display field="remark" id="s_com_zsgl_domain_Hotel_remark" object="${hotel}" z="iYIO956UojLywptICWRoyK9qE84="/>
+        </sec:authorize>
+        ${hotel.remark }	
+   		<field:display field="openingTime" id="s_com_zsgl_domain_Hotel_openingTime" object="${hotel}" z="qeZlLuSzlGalzjbCsxY+xv2zC6o="/>
+    </page:show>
+    <a href="/hotel/view/${hotel.id }.html" target="_blank" style="font-size:14px;">预览</a>
+</div>

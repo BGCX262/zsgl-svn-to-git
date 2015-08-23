@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_zsgl_domain_Scenic" modelAttribute="scenic" path="/scenics" versionField="Version" z="18Uu5UW8NvYTqxqDHQCY/gDaHrw=">
+        <field:input field="name" id="c_com_zsgl_domain_Scenic_name" min="1" required="true" z="nJpneRk/GWme/fDvehqBJM8BblQ="/>
+        <field:textarea2 field="keywords" id="c_com_zsgl_domain_Scenic_keywords" z="EteEeokcrXUumjhM/gU98awiflw="/>
+        <field:textarea2 field="description" id="c_com_zsgl_domain_Scenic_description" z="NNpqFNKpz+E8dTZc7lUSaQw+A6M="/>
+        <field:input field="image" id="c_com_zsgl_domain_Scenic_image" min="1" required="true" z="2866Pqc0AeqZGU+VnCsWqlUMEWY="/>
+        <field:input field="doorPrice" id="c_com_zsgl_domain_Scenic_doorPrice" validationMessageCode="field_invalid_number" z="hnXKOKfQJQViLNrkf1sFDN6OQPM="/>
+        <field:select field="strength" id="c_com_zsgl_domain_Scenic_strength" itemValue="id" items="${strengths}" path="/strengths" z="2wT6Qx5yENCZn9p4f1ZcRWI7xTE="/>
+        <field:input field="sort" id="c_com_zsgl_domain_Scenic_sort" validationMessageCode="field_invalid_integer" z="fjKX/HQNww6jKbLxRnxbNH3SKVs="/>
+        <field:select field="address" id="c_com_zsgl_domain_Scenic_address" itemValue="id" items="${scenicaddresses}" path="/scenicAddresses" z="6KdVYhJBpvRBPculB+zXUEL+3jg="/>
+        <field:textarea field="content" id="c_com_zsgl_domain_Scenic_content" z="XIuBjRgtszayUECDOx8XD9zAKKg="/>
+    </form:update>
+</div>

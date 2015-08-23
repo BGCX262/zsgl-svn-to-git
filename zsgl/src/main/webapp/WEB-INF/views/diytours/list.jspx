@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_zsgl_domain_DiyTour" items="${diytours}" z="83cmYRRFO3LYZzGJr3cXC+l/pys=">
+        <table:table data="${diytours}" id="l_com_zsgl_domain_DiyTour" path="/diytours" z="ss1MKDsZOLsv5wFX6m5LPRwYOgA=">
+            <table:column id="c_com_zsgl_domain_DiyTour_name" property="name" z="OK0MYFZGnCFqyzfrtgD6TsNroNI="/>
+            <table:column id="c_com_zsgl_domain_DiyTour_doorPrice" property="doorPrice" z="8mNa7zfdGSrKa3DthL0eP1SWoo4="/>
+            <table:column id="c_com_zsgl_domain_DiyTour_privilege" property="privilege" z="KpJtbGdYxVqPDgjexnLYZBTUe/Y="/>
+            <table:column id="c_com_zsgl_domain_DiyTour_children" property="children" z="X27f+JYpegF15DykiKBFNAliEnM="/>
+            <table:column id="c_com_zsgl_domain_DiyTour_address" property="address" z="9q6ksovBEKwjk3DNxuPiL2esBDo="/>
+            <table:column id="c_com_zsgl_domain_DiyTour_type" property="type" z="bCB+Ha3+z/8ZtwBXcPOOGqMv7Mk="/>
+        </table:table>
+    </page:list>
+</div>
